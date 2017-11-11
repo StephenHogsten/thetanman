@@ -1,0 +1,17 @@
+<%# 
+  required: link
+  optional: children, active
+%>
+<li class='header-link-dropdown'>
+  <% if local_assigns[:children] %>
+    <% child_id = "child-of-#{link}" %>
+    <%= link_to link.titleize, '#', class: '__link', "data-target" => child_id %>
+    <div class='js-sub-link-container __sublink-container' id=<%= child_id %>>
+      <% children.each do |child| %>
+        <%= link_to child, child.to_sym, class: '__sublink' %>
+      <% end %>
+    </div>
+  <% else %>
+    <%= link_to link.titleize, link.to_sym, class: "__link #{'--active' if local_assigns[:active] == link}" %>
+  <% end %>
+</li>

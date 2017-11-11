@@ -2,7 +2,10 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about
+  def bio
+  end
+
+  def currently_reading
   end
 
   def wwwp
