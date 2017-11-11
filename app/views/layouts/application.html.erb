@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TheTanMan</title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400|Raleway:200,400" rel="stylesheet"> 
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

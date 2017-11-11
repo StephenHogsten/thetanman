@@ -1,0 +1,13 @@
+<div class="header">
+  <h1>LUCY TAN</h1>
+  <div class="__links">
+    <% links = ['about', 'what_we_were_promised', 'news', 'events', 'other_work', 'contact'] %>
+    <ul>
+      <% links.each do |link| %>
+        <li>
+          <%= link_to link.titleize, link.to_sym, class: '__link' %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

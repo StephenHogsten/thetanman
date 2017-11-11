@@ -1,0 +1,66 @@
+$dark-green: #12726B;
+$yellow: #FFF9B4;
+$pink: #F1A6AB;
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $dark-green;
+  font-family: 'Hind', sans-serif;
+  color: $yellow;
+}
+
+.header {
+  position: relative;
+  padding: 15px 30px 0 30px;
+  
+  h1 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 100;
+  }
+
+  .__links {
+    max-width: 61.8%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding-left: unset;
+    }
+
+    li {
+      list-style: none;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  .__link {
+    color: $yellow;
+    text-decoration: none;
+    font-size: 1.6em;
+
+    &:hover {
+      color: $pink;
+      text-decoration: underline;
+      transition: color 0.5s ease-in;
+    }
+  }
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  height: 1300px;
+  background-image: image_url('WWWP.png');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
