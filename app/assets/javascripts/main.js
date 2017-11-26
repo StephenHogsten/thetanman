@@ -10,17 +10,3 @@ $(document).on('turbolinks:before-visit', function(event) {
       })
   }
 })
-
-// $(document).on('mouseover', '.js-header-link', function(ev) {
-//   var id = '#' + $(this).data('target')
-//   $(id).fadeIn(500, function() {
-//     console.log('faded in')
-//   });
-// })
-
-// $(document).on('mouseout', '.js-header-link', function() {
-//   var id = '#' + $(this).data('target')
-//   $(id).fadeOut(500, function() {
-//     console.log('faded out')
-//   });
-// })

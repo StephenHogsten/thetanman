@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   get 'other_work', to: 'pages#other_work'
   get 'contact', to: 'pages#contact'
 
+  post 'contact', to: 'pages#contact_send'
+
   root to: 'pages#home'
 end

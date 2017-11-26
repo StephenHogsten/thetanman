@@ -1,0 +1,15 @@
+<div class="row">
+  <h2 class="section-title">Currently Reading</h2>
+  <hr>
+</div>
+
+<% @books.each do |year, book_list| %>
+  <div class="row">
+    <h3 class="section-subtitle"><%= year %></h3>
+    <div class="book-list">
+      <% book_list.each do |book| %>
+        <p class='book'><span class='__title'><%= book[:title] %></span> - <%= book[:author] %></p>
+      <% end %>
+    </div>
+  </div>
+<% end %>

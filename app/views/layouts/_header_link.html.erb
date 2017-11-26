@@ -11,7 +11,9 @@
         <%= link_to child, child.to_sym, class: '__sublink' %>
       <% end %>
     </div>
+
   <% else %>
     <%= link_to link.titleize, link.to_sym, class: "__link #{'--active' if local_assigns[:active] == link}" %>
+    
   <% end %>
 </li>
