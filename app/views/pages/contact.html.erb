@@ -1,0 +1,55 @@
+<div class="row">
+  <h1 class="section-title">Contact</h1>
+  <hr>
+</div>
+
+<div class='row'>
+  <div class='icon-container'>
+    <%= link_to 'https://www.goodreads.com/book/show/32349400-what-we-were-promised', class: 'social-icon', target: '_blank' do %>
+      <%= image_tag 'goodreads_icon.png', class: '__img' %>
+    <% end %>
+
+    <%= link_to 'https://www.instagram.com/lucyrtan/', class: 'social-icon', target: '_blank' do %>
+      <%= image_tag 'instagram_icon.png', class: '__img --no-bg' %>
+    <% end %>
+
+    <%= link_to 'https://www.facebook.com/LucyTanAuthor/', class: 'social-icon', target: '_blank' do %>
+      <%= image_tag 'facebook_icon.png', class: '__img' %>
+    <% end %>
+
+    <%= link_to 'https://twitter.com/citizenofspace', class: 'social-icon', target: '_blank' do %>
+      <%= image_tag 'twitter_icon.png', class: '__img' %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row --split">
+  <div class="__left">
+    <p>My written work is represented by Rebecca Gradinger at Fletcher & Company (<%= mail_to "rebecca@fletcherandco.com", "rebecca@fletcherandco.com", class: 'email-link' %>)</p>
+    <p>My film and TV rights are represented by Michelle Weiner at Creative Artists Agency (<%= mail_to "michelle.weiner@caa.com", "michelle.weiner@caa.com", class: 'email-link' %>)</p>
+    <p>For appearances and publicity, please contact Lena Little at Hachette Book Group (<%= mail_to "lena.little@hbgusa.com", "lena.little@hbgusa.com", class: 'email-link' %>)</p>
+    <p>To reach me directly, please use the form.</p>
+  </div>
+  <div class="__right __contact">
+    <%= form_tag("/contact", method: "post", id: 'contact-us') do %>
+      <div class="__row">
+        <%# label_tag(:name, "Name") %>
+        <%= text_field_tag(:name, '', placeholder: 'Name', class: '__half-width') %>
+
+        <%# label_tag(:email, "Email") %>
+        <%= text_field_tag(:email, '', placeholder: 'Email', class: '__half-width') %>
+      </div>  
+
+      <div class="__row">
+        <%# label_tag(:subject, "Subject") %>
+        <%= text_field_tag(:subject, '', placeholder: 'Subject', class: '__full-width') %>
+      </div>
+
+      <div class="__row">
+        <%# label_tag(:message, "Message") %>
+        <%= text_area_tag(:message, '', placeholder: 'Message', class: '__full-width') %>
+      </div>
+      <%= submit_tag("Send", class: '__submit') %>
+    <% end %>
+  </div>
+</div>

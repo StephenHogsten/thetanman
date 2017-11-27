@@ -3,27 +3,36 @@ $dark-green: #0A716A;
 $bg-green: darken($dark-green, 0%);
 $yellow: #FFF9B4;
 $light-yellow: rgba($yellow, 0.6);
+// $light-yellow: rgb(143, 179, 107);
 $pink: #F1A6AB;
 
 @mixin yellow-link {
   color: $yellow;
   text-decoration: none;
+  // border-left: 3px transparent solid;
 
   &.--active,
   &:hover {
     color: $pink;
-    text-decoration: underline;
-    transition: color 0.5s ease-in;
+    border-color: $pink;
+    // font-style: italic;
+    transition: color 0.5s ease-in, border-color 0.5s ease-in;
   }
 }
 
+html {
+  background-color: $bg-green;
+}
 body {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: $bg-green;
   font-family: 'Hind', sans-serif;
   color: $yellow;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -33,11 +42,12 @@ a {
 
 hr {
   width: 75%;
+  border: none;
+  border-bottom: 1px $light-yellow solid;
   color: $light-yellow;
   margin-bottom: 2em;
   margin-left: 0;
 }
-
 
 .header {
   position: relative;
@@ -140,6 +150,11 @@ hr {
   }
 }
 
+.email-link {
+  @include yellow-link();
+  text-decoration: underline;
+}
+
 .main-container {
   // opacity: 0;
   animation-name: fade-in;
@@ -166,9 +181,9 @@ hr {
 
 .row {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 2em auto;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 
   &.--split {
     display: flex;
@@ -178,11 +193,52 @@ hr {
   
   .__left {
     width: 50%;
+    flex: 1 1 1;
     padding-right: 1em;
     border-right: 1px $light-yellow solid;
   }
   .__right {
     width: 50%;
+    flex: 1 1 1;
+    padding-left: 1em;
+  }
+
+  .__contact {
+    flex-grow: 2;
+  }
+}
+
+.other-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .__thumb {
+    margin-right: 2em;
+    border-radius: 4px;
+  }
+
+  .__header {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .__title {
+    font-size: 1.1em;
+    font-style: normal;
+
+    &::after {
+      content: ' - ';
+    }
+  }
+
+  .__note {
+    font-size: 0.9em;
+    font-style: italic;
   }
 }
 
@@ -215,10 +271,75 @@ hr {
   .__img {
     width: 30px;
     height: auto;
-    &.--white-bg {
-      background-color: darken(white, 5%);
-      border-radius: 4px;
+
+    &.--no-bg {
+      // background-color: darken(white, 5%);
+      // border-radius: 4px;
+      width: 46px;
     }
+  }
+}
+
+#contact-us {
+  input,
+  textarea {
+    margin: 0.5em;
+    padding: 1em;
+    border: 1px $yellow solid;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: $bg-green;
+    color: $yellow;
+    caret-color: $pink;
+    font-family: 'Hind', sans-serif;
+    font-size: 1em;
+    outline: none;
+
+    &::placeholder,
+    &:placeholder-shown {
+      color: $light-yellow;
+      font-style: italic;
+    }
+
+    &:focus {
+      border-color: $pink;
+      color: $pink;
+      transition: border-color 0.5s ease-in, color 0.5s ease-in;
+    }
+  }
+
+  textarea {
+    min-height: 9em;
+    resize: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    // display: none;
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: $yellow;
+    border-radius: 2px;
+  }
+
+  .__row {
+    display: flex;
+  }
+
+  .__half-width {
+    flex: 1 1 1;
+    max-width: calc(50% - 1em);
+  }
+
+  .__full-width {
+    width: 100%;
+  }
+
+  .__submit {
+    @include yellow-link();
   }
 }
 

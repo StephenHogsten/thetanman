@@ -123,4 +123,10 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  #POST /contact
+  # TODO: throttle https://github.com/dryruby/rack-throttle
+  def contact_send
+    puts params
+  end
 end
