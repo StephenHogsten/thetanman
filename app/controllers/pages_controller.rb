@@ -109,7 +109,7 @@ class PagesController < ApplicationController
     }
   end
 
-  def wwwp
+  def what_we_were_promised
   end
 
   def news
@@ -127,6 +127,19 @@ class PagesController < ApplicationController
   #POST /contact
   # TODO: throttle https://github.com/dryruby/rack-throttle
   def contact_send
-    puts params
+    if (params[:name].to_s == '') or (params[:email].to_s == '') or (params[:subject].to_s == '') or (params[:message].to_s == '')
+      render json: { 
+        message: 'Error: invalid parameters, missing required fields',
+        status: 400
+      }, status: 400
+      return 
+    end
+    
+    ContactAuthorMailer.contact(params[:name], params[:email], params[:subject], params[:message]).deliver_now
+
+    respond_to do |format|
+      format.html { redirect_back fallback_location: root_path, flash: {notice: 'message sent successfully'} }
+      format.json { render json: {message: "success", status: 200}, status: 200 }
+    end
   end
 end

@@ -22,6 +22,7 @@ $pink: #F1A6AB;
 
 html {
   background-color: $bg-green;
+  overflow-y: scroll;
 }
 body {
   padding: 0;
@@ -29,6 +30,7 @@ body {
   background-color: $bg-green;
   font-family: 'Hind', sans-serif;
   color: $yellow;
+  position: relative;
 }
 
 * {
@@ -49,6 +51,27 @@ hr {
   margin-left: 0;
 }
 
+#flash-messages {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 75%;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  z-index: 100;
+  border: 3px #9f9f9f solid;
+  border-radius: 4px 4px 0 0;
+  background-color: #F0F0F0;
+  text-align: center;
+  color: #202020;
+  animation-name: 'fade-out';
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  animation-duration: 2s;
+}
+
 .header {
   position: relative;
   padding: 15px 30px 0 30px;
@@ -60,7 +83,7 @@ hr {
     font-weight: 100;
 
     a {
-      color: $yellow;
+      @include yellow-link();
       text-decoration: none;
     }
   }
@@ -89,6 +112,11 @@ hr {
     @include yellow-link();
     font-size: 1.6em;
     z-index: 100;
+
+    &.--no-fade:hover {
+      color: $yellow;
+      border-color: $yellow;
+    }
   }
 
   .header-link-dropdown {
@@ -147,6 +175,21 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 1.2em;
+  }
+}
+
+#ajax-results-container,
+.spinner-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light-yellow;
+
+  &.--error {
+    height: unset;
+    padding-bottom: 1em;
   }
 }
 
@@ -369,5 +412,6 @@ hr {
   }
   to {
     opacity: 0;
+    z-index: -100;
   }
 }

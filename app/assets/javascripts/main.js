@@ -10,3 +10,37 @@ $(document).on('turbolinks:before-visit', function(event) {
       })
   }
 })
+
+$(document).on('click', 'a[href="#"]', function(ev) {
+  ev.preventDefault();
+})
+
+$(document).on('turbolinks:load', function() {
+  // I believe some events need to be bound to elements rather than just the body
+
+  $('#contact-us')
+    .on('submit', function(ev, b) {
+      $('#contact-us').hide();
+      $('#form-spinner').show();
+      $('#ajax-results-container').hide();
+    })
+    .on('ajax:success', function(a, b) {
+      $('#form-spinner').hide();
+      
+      $('#ajax-results-container').children().remove()
+      $('#ajax-results-container')
+        .removeClass('--error')
+        .show()
+        .append('<p>Message sent successfully!</p>');
+    })
+    .on('ajax:error', function(a, b) {
+      $('#form-spinner').hide();
+      $('#contact-us').show();
+      $('#ajax-results-container').children().remove();
+      $('#ajax-results-container')
+        .addClass('--error')
+        .show()
+        .append('<p>Message not sent, please try again later.</p>')
+    });
+
+});

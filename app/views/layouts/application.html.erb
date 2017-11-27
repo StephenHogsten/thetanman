@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TheTanMan</title>
+    <title>Lucy Tan - Author</title>
     <%= csrf_meta_tags %>
 
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400|Raleway:200,400" rel="stylesheet"> 
@@ -13,6 +13,15 @@
 
   <body>
     <%= render 'layouts/header' %>
+
+    <% if flash.any? %>
+      <% puts flash.inspect %>
+      <div id="flash-messages">
+        <% flash.each do |name, msg| -%>
+          <%= content_tag :div, msg, class: "__#{name}" %>
+        <% end -%>
+      </div>
+    <% end %>
 
     <div class="main-container">
       <%= yield %>

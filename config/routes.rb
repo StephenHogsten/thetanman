@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'bio', to: 'pages#bio'
   get 'currently_reading', to: 'pages#currently_reading'
-  get 'what_we_were_promised', to: 'pages#wwwp'
+  get 'what_we_were_promised', to: 'pages#what_we_were_promised'
   get 'news', to: 'pages#news'
   get 'events', to: 'pages#events'
   get 'other_work', to: 'pages#other_work'
