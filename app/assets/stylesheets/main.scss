@@ -8,8 +8,9 @@ $pink: #F1A6AB;
 
 @mixin yellow-link {
   color: $yellow;
+  border-color: $yellow;
   text-decoration: none;
-  // border-left: 3px transparent solid;
+  transition: color 0.5s ease-in, border-color 0.5s ease-in;
 
   &.--active,
   &:hover {
@@ -193,6 +194,50 @@ hr {
   }
 }
 
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch; 
+
+  &.--emphasize {
+    align-items: center;
+  }
+}
+
+.button {
+  @include yellow-link;
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 0.5em 1.5em;
+  border: 1px $yellow solid;
+  border-radius: 4px;
+
+  &.--emphasize {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-image: linear-gradient($yellow, $pink);
+    background-size: 100% 500%;
+    background-position: 0% 0%;
+    color: $dark-green;
+    transition: background-position 1s ease-in;
+
+    &:hover {
+      background-position: 0% 100%;
+      transition: background-position 1s ease-in;
+    }
+  }
+
+  &.--wide {
+    width: 100%;
+  }
+}
+
 .email-link {
   @include yellow-link();
   text-decoration: underline;
@@ -205,11 +250,13 @@ hr {
 }
 
 .cover {
-  height: 110vh;
-  background-image: image_url('WWWP.png');
-  background-position: center top;
-  background-size: contain;
-  background-repeat: no-repeat;
+  // height: 110vh;
+  height: auto;
+  width: 100%;
+  // background-image: image_url('WWWP.png');
+  // background-position: center top;
+  // background-size: contain;
+  // background-repeat: no-repeat;
 }
 
 .section-title {
@@ -233,6 +280,10 @@ hr {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  &.--preorder {
+    text-align: center;
+  }
   
   .__left {
     width: 50%;
@@ -248,6 +299,36 @@ hr {
 
   .__contact {
     flex-grow: 2;
+  }
+
+  .__break {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.links-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.quote {
+  .__source {
+    font-style: italic;
+
+    &::before {
+      content: '\A- ';
+    }
+  }
+}
+
+.book-cover-container {
+  border: 1px $yellow solid;
+  padding: 1em;
+
+  .__img {
+    max-width: 50%;
+    height: auto;
   }
 }
 
@@ -294,8 +375,10 @@ hr {
   border: 1px $yellow solid;
 }
 
-.book {
-  margin: 0.25em 0;
+.book-list {
+  .__book {
+    margin: 0.25em 0;
+  }
 
   .__title {
     font-weight: bold;

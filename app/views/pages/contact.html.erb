@@ -37,7 +37,7 @@
     <%= form_tag("/contact", method: "post", id: 'contact-us', remote: true, 'data-type' => :json) do %>
       <div class="__row">
         <%# label_tag(:name, "Name") %>
-        <%= text_field_tag(:name, '', placeholder: 'Name', class: '__half-width', required: false) %>
+        <%= text_field_tag(:user_name, '', placeholder: 'Name', class: '__half-width', required: true) %>
 
         <%# label_tag(:email, "Email") %>
         <%= text_field_tag(:email, '', placeholder: 'Email', class: '__half-width', required: true) %>

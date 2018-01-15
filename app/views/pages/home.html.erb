@@ -1,2 +1,48 @@
+<%#
 <div class="cover">
+</div>
+%>
+
+<%= image_tag 'WWWP.png', class: 'cover' %>
+
+<div class="row --preorder">
+  <h3 class='section-subtitle'>Enter giveaway for a free advance copy of the book</h3>
+  <div class="button-container --emphasize">
+    <%= link_to 'Enter', 'https://www.goodreads.com/giveaway/enter_choose_address/262909-what-we-were-promised', class: 'button --emphasize' %>
+  </div>
+</div>
+
+<div class="row --preorder">
+  <hr class='__break'>
+
+  <h3 class="section-subtitle">Pre-order a copy</h3>
+  
+  <% if false %>
+  <div class="button-container">
+    <%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button' %>
+    <%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182/", class: 'button' %>
+    <%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858;", class: 'button' %>
+  </div>
+  <% end %>
+
+  <table class='links-table'>
+    <tbody>
+      <tr>
+        <td><%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182/", class: 'button --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858;", class: 'button  --wide' %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="row --reviews">
+  <hr class="__break">
+  <p class='quote'>this is a review<span class="__source">George Clooney</span></p>
+  <p class='quote'>this is another review. Even better than the last<span class="__source">Brad Pitt</span></p>
+  <p class='quote'>Wow this one is so long.  There are so many good things to say and they just go on and on and on and on and on and on and on and on and on and on and on and on<span class="__source">Matt Damon</span></p>
 </div>

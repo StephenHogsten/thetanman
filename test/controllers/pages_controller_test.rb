@@ -53,4 +53,39 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     get contact_url
     assert_response :success
   end
+
+  test "should reject incomplete contact submissions" do
+    post contact_url, params: {name: '', email: 'EMAIL', subject: 'SUBJECT', message: 'MESSAGE'}
+    assert_response 400, 'Empty name'
+
+    post contact_url, params: {name: 'NAME', email: '', subject: 'SUBJECT', message: 'MESSAGE'}
+    assert_response 400, "Empty email"
+
+    post contact_url, params: {name: 'NAME', email: 'EMAIL', subject: '', message: 'MESSAGE'}
+    assert_response 400, "Empty subject"
+
+    post contact_url, params: {name: 'NAME', email: 'EMAIL', subject: 'SUBJECT', message: ''}
+    assert_response 400, "Empty message"
+
+    post contact_url, params: {email: 'EMAIL', subject: 'SUBJECT', message: 'MESSAGE'}
+    assert_response 400, 'No name'
+
+    post contact_url, params: {name: 'NAME', subject: 'SUBJECT', message: 'MESSAGE'}
+    assert_response 400, "No email"
+
+    post contact_url, params: {name: 'NAME', email: 'EMAIL', message: 'MESSAGE'}
+    assert_response 400, "No subject"
+
+    post contact_url, params: {name: 'NAME', email: 'EMAIL', subject: 'SUBJECT'}
+    assert_response 400, "No message"
+  end
+
+  test "should accept contact submission" do
+    post contact_url, params: {user_name: 'NAME', email: 'EMAIL', subject: 'SUBJECT', message: 'MESSAGE'}
+    assert_response :redirect, 'Full submission redirect'
+    
+    post contact_url, params: {user_name: 'NAME', email: 'EMAIL', subject: 'SUBJECT', message: 'MESSAGE'}, headers: {"ACCEPT" => 'application/json'}
+    assert_response :success, 'Full submission json'
+  end
+    
 end
