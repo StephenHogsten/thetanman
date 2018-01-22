@@ -5,6 +5,7 @@ $yellow: #FFF9B4;
 $light-yellow: rgba($yellow, 0.6);
 // $light-yellow: rgb(143, 179, 107);
 $pink: #F1A6AB;
+$footer-height: 220px;
 
 @mixin yellow-link {
   color: $yellow;
@@ -26,12 +27,18 @@ html {
   overflow-y: scroll;
 }
 body {
-  padding: 0;
-  margin: 0;
-  background-color: $bg-green;
-  font-family: 'Hind', sans-serif;
-  color: $yellow;
   position: relative;
+  padding: 0;
+  padding-bottom: $footer-height * 1.5;
+  margin: 0;
+  min-height: 100vh;
+  background-color: $bg-green;
+  background: image_url("beige-paper.png");
+  font-family: 'Hind', sans-serif;
+  // background: linear-gradient($yellow 40%, $pink);
+  // background-clip: text;
+  color: $yellow;
+  // color: transparent;
 }
 
 * {
@@ -113,6 +120,7 @@ hr {
     @include yellow-link();
     font-size: 1.6em;
     z-index: 100;
+    text-transform: uppercase;
 
     &.--no-fade:hover {
       color: $yellow;
@@ -179,6 +187,16 @@ hr {
   }
 }
 
+.footer {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  height: $footer-height;
+  width: 100%;
+  // background: linear-gradient(transparent 0%, rgba($pink, 0.8) 50%);
+  background: $pink;
+}
+
 #ajax-results-container,
 .spinner-container {
   height: 100%;
@@ -235,6 +253,7 @@ hr {
 
   &.--wide {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -261,12 +280,27 @@ hr {
 
 .section-title {
   text-transform: uppercase;
+
+  &.--book-title {
+    text-align: center;
+    font-size: 5em;
+    background: linear-gradient($yellow, $pink);
+    background-clip: text;
+    color: transparent;
+    font-weight: 100;
+    line-height: 1.2;
+    // this should all get replaced with an svg.. ?
+  }
 }
 
 .section-subtitle {
   font-size: 2em;
   font-weight: normal;
   margin: 0.5em 0;
+
+  &.--center {
+    text-align: center;
+  }
 }
 
 .row {
@@ -274,6 +308,7 @@ hr {
   max-width: 1000px;
   margin: 0 auto 2em auto;
   font-size: 1.2rem;
+  clear: both;
 
   &.--split {
     display: flex;
@@ -313,12 +348,19 @@ hr {
   margin-right: auto;
 }
 .quote {
-  .__source {
-    font-style: italic;
+  text-align: center;
+  margin-bottom: 2.5em;
 
+  .__quote-author {
+    font-style: italic;
+    
     &::before {
       content: '\A- ';
     }
+  }
+  
+  .__quote-text {
+
   }
 }
 

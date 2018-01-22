@@ -5,23 +5,23 @@
 
 <%= image_tag 'WWWP.png', class: 'cover' %>
 
+<% if false %>
 <div class="row --preorder">
   <h3 class='section-subtitle'>Enter giveaway for a free advance copy of the book</h3>
   <div class="button-container --emphasize">
     <%= link_to 'Enter', 'https://www.goodreads.com/giveaway/enter_choose_address/262909-what-we-were-promised', class: 'button --emphasize' %>
   </div>
 </div>
+<% end %>
 
 <div class="row --preorder">
-  <hr class='__break'>
-
   <h3 class="section-subtitle">Pre-order a copy</h3>
   
   <% if false %>
   <div class="button-container">
     <%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button' %>
     <%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182/", class: 'button' %>
-    <%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858;", class: 'button' %>
+    <%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858", class: 'button' %>
   </div>
   <% end %>
 
@@ -31,10 +31,16 @@
         <td><%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button --wide' %></td>
       </tr>
       <tr>
-        <td><%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182/", class: 'button --wide' %></td>
+        <td><%= link_to 'Purchase at IndieBound', "https://www.indiebound.org/book/9780316437189", class: 'button --wide' %></td>
       </tr>
       <tr>
-        <td><%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858;", class: 'button  --wide' %></td>
+        <td><%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858?ean=9780316437189", class: 'button  --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182?tag=hacboogrosit-20", class: 'button --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at iBooks', "https://itunes.apple.com/us/book/what-we-were-promised/id1308142947?mt=11", class: 'button --wide' %></td>
       </tr>
     </tbody>
   </table>
@@ -42,7 +48,10 @@
 
 <div class="row --reviews">
   <hr class="__break">
-  <p class='quote'>this is a review<span class="__source">George Clooney</span></p>
-  <p class='quote'>this is another review. Even better than the last<span class="__source">Brad Pitt</span></p>
-  <p class='quote'>Wow this one is so long.  There are so many good things to say and they just go on and on and on and on and on and on and on and on and on and on and on and on<span class="__source">Matt Damon</span></p>
+  <% @quotes.each do |quote| %>
+    <div class="quote">
+      <p class="__quote-text"><%= quote[:text] %></p>
+      <p class="__quote-author"><%= quote[:author] %></p>
+    </div>
+  <% end %>
 </div>

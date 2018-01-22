@@ -1,0 +1,43 @@
+<div class="row">
+  <h3 class='section-title --book-title'>What We<br>Were<br>Promised</h3>
+</div>
+
+<div class="row">
+  <hr class="__break">
+
+  <h3 class="section-subtitle --center">In stores July 10, 2018! Click to pre-order below: </h3>
+  <table class='links-table'>
+    <tbody>
+      <tr>
+        <td><%= link_to 'Purchase at IndieBound', "https://www.indiebound.org/book/9780316437189", class: 'button --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858?ean=9780316437189", class: 'button  --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182?tag=hacboogrosit-20", class: 'button --wide' %></td>
+      </tr>
+      <tr>
+        <td><%= link_to 'Purchase at iBooks', "https://itunes.apple.com/us/book/what-we-were-promised/id1308142947?mt=11", class: 'button --wide' %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="row">
+  <hr class="__break">
+
+  <% @quotes.each do |quote| %>
+    <div class="quote">
+      <p class="__quote-text"><%= quote[:text] %></p>
+      <p class="__quote-author"><%= quote[:author] %></p>
+    </div>
+  <% end %>
+</div>
+
+<div class="row">
+  <hr class="__break">
+  <p>After years of chasing the American dream, the Zhen family has moved back to China. Settling into a luxurious serviced apartment in Shanghai, Wei, Lina, and their daughter, Karen, join an elite community of Chinese-born, Western-educated professionals who have returned to a radically transformed city.</p>
+  <p>One morning, in the eighth tower of Lanson Suites, Lina discovers that a childhood keepsake, an ivory bracelet, has gone missing. The incident contributes to a wave of unease that has begun to settle throughout the Zhen household. Wei, a marketing strategist, bows under the guilt of not having engaged in nobler work. Meanwhile, Lina, lonely in her new life of leisure, assumes the modern moniker taitai--a housewife who does no housework at all. She spends her days haunted by the circumstances surrounding her arranged marriage to Wei and her lingering feelings for his brother, Qiang. Lina and Wei take pains to hide their anxieties, but their housekeeper, Sunny, a hardworking girl with secrets of her own, bears witness to their struggles. When Qiang reappears in Shanghai after decades on the run with a local gang, the family must finally come to terms with the past.</p>
+  <p>From a silk-producing village in rural China, up the corporate ladder in suburban America, and back again to the post-Maoist nouveau riche of modern Shanghai, WHAT WE WERE PROMSED explores the question of what we owe to our country, our families, and ourselves.</p>
+</div>
