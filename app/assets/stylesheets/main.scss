@@ -83,12 +83,12 @@ hr {
 
 .header {
   position: relative;
-  padding: 15px 30px;
+  padding: 30px;
   background-color: $header-green;
   
   h1 {
     margin: 0;
-    font-size: 4em;
+    font-size: 3.2em;
     font-weight: 100;
 
     a {
@@ -102,7 +102,7 @@ hr {
   .__links {
     max-width: 61.8%;
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     right: 0;
 
     ul {
@@ -323,6 +323,10 @@ hr {
   &.--preorder {
     text-align: center;
   }
+
+  &.--long-text {
+    font-weight: 300;
+  }
   
   .__left {
     width: 50%;
@@ -346,6 +350,12 @@ hr {
   }
 }
 
+.title-img {
+  max-height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 .links-table {
   margin-left: auto;
@@ -353,19 +363,38 @@ hr {
 }
 .quote {
   text-align: center;
-  margin-bottom: 2.5em;
+  margin-bottom: 3.5em;
 
   .__quote-author {
+    font-size: 0.9em;
     font-style: italic;
+    font-weight: bolder;
     
     &::before {
       content: '\A- ';
     }
   }
+
+  .__quote-author-description {
+    font-weight: normal;
+  }
   
   .__quote-text {
-
   }
+}
+
+.press-items {
+  list-style-type: square;
+}
+
+.press-item {
+  margin: 1em 0;
+}
+
+.press-link {
+  @include yellow-link();
+  border: none;
+  font-weight: 600;
 }
 
 .book-cover-container {

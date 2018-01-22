@@ -48,10 +48,10 @@
 
 <div class="row --reviews">
   <hr class="__break">
-  <% @quotes.each do |quote| %>
+  <% @all_quotes.each do |quote| %>
     <div class="quote">
       <p class="__quote-text"><%= quote[:text] %></p>
-      <p class="__quote-author"><%= quote[:author] %></p>
+      <p class="__quote-author"><%= quote[:author] %> <span class="__quote-author-description"><%= quote[:author_description] %></span></p>
     </div>
   <% end %>
 </div>
