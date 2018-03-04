@@ -3,7 +3,7 @@
 </div>
 %>
 
-<%= image_tag 'WWWP.png', class: 'cover' %>
+<%= image_tag 'web_cover_w_quote.png', class: 'cover' %>
 
 <% if false %>
 <div class="row --preorder">
@@ -14,41 +14,58 @@
 </div>
 <% end %>
 
+<div class="row --long-text">
+  <hr class="__break">
+  <p>After years of chasing the American dream, the Zhen family has moved back to China. Settling into a luxurious serviced apartment in Shanghai, Wei, Lina, and their daughter, Karen, join an elite community of Chinese-born, Western-educated professionals who have returned to a radically transformed city.</p>
+  <p>One morning, in the eighth tower of Lanson Suites, Lina discovers that a childhood keepsake, an ivory bracelet, has gone missing. The incident contributes to a wave of unease that has begun to settle throughout the Zhen household. Wei, a marketing strategist, bows under the guilt of not having engaged in nobler work. Meanwhile, Lina, lonely in her new life of leisure, assumes the modern moniker taitai--a housewife who does no housework at all. She spends her days haunted by the circumstances surrounding her arranged marriage to Wei and her lingering feelings for his brother, Qiang. Lina and Wei take pains to hide their anxieties, but their housekeeper, Sunny, a hardworking girl with secrets of her own, bears witness to their struggles. When Qiang reappears in Shanghai after decades on the run with a local gang, the family must finally come to terms with the past.</p>
+  <p>From a silk-producing village in rural China, up the corporate ladder in suburban America, and back again to the post-Maoist nouveau riche of modern Shanghai, WHAT WE WERE PROMSED explores the question of what we owe to our country, our families, and ourselves.</p>
+</div>
+
 <div class="row --preorder">
+  <hr class="__break">
   <h3 class="section-subtitle">Pre-order a copy</h3>
   
-  <% if false %>
-  <div class="button-container">
-    <%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button' %>
-    <%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182/", class: 'button' %>
-    <%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858", class: 'button' %>
-  </div>
+  <% if true %>
+    <div class="purchase-links">
+      <%= link_to "https://www.indiebound.org/book/9780316437189", class: 'purchase-button --wide' do %>
+        <img src="https://www.indiebound.org/files/indiebound/images/banners/indiesRed2_161x41_10-26-15.png" alt="IndieBound.org" class='--indiebound'>
+      <% end %>
+      <%= link_to "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858?ean=9780316437189", class: 'purchase-button --wide' do %>
+        <img src="http://dispatch.barnesandnoble.com/content/dam/ccr/global/header/bn-logo.png" alt="Barnes & Noble" class='--bandn'>
+      <% end %>
+      <%= link_to "https://www.amazon.com/gp/product/0316437182?tag=hacboogrosit-20", class: 'purchase-button --wide' do %>
+        <%= image_tag "amazon_logo_RGB.jpg", alt: "Amazon.com", class: '--amazon' %>
+      <% end %>
+      <%= link_to "https://itunes.apple.com/us/book/what-we-were-promised/id1308142947?mt=11", class: 'purchase-button --wide --ibooks' do %>
+        <%= image_tag 'Get_it_on_iBooks_Badge_US_1114.svg', alt: 'iBooks', class: '--ibooks' %>
+      <% end %>
+    </div>
+  <% else %>
+    <table class='links-table'>
+      <tbody>
+        <tr>
+          <td><%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button --wide' %></td>
+        </tr>
+        <tr>
+          <td><%= link_to 'Purchase at IndieBound', "https://www.indiebound.org/book/9780316437189", class: 'button --wide' %></td>
+        </tr>
+        <tr>
+          <td><%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858?ean=9780316437189", class: 'button  --wide' %></td>
+        </tr>
+        <tr>
+          <td><%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182?tag=hacboogrosit-20", class: 'button --wide' %></td>
+        </tr>
+        <tr>
+          <td><%= link_to 'Purchase at iBooks', "https://itunes.apple.com/us/book/what-we-were-promised/id1308142947?mt=11", class: 'button --wide' %></td>
+        </tr>
+      </tbody>
+    </table>
   <% end %>
-
-  <table class='links-table'>
-    <tbody>
-      <tr>
-        <td><%= link_to 'View on GoodReads', "https://www.goodreads.com/book/show/32349400-what-we-were-promised", class: 'button --wide' %></td>
-      </tr>
-      <tr>
-        <td><%= link_to 'Purchase at IndieBound', "https://www.indiebound.org/book/9780316437189", class: 'button --wide' %></td>
-      </tr>
-      <tr>
-        <td><%= link_to 'Purchase at Barnes & Noble', "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858?ean=9780316437189", class: 'button  --wide' %></td>
-      </tr>
-      <tr>
-        <td><%= link_to 'Purchase at Amazon', "https://www.amazon.com/gp/product/0316437182?tag=hacboogrosit-20", class: 'button --wide' %></td>
-      </tr>
-      <tr>
-        <td><%= link_to 'Purchase at iBooks', "https://itunes.apple.com/us/book/what-we-were-promised/id1308142947?mt=11", class: 'button --wide' %></td>
-      </tr>
-    </tbody>
-  </table>
 </div>
 
 <div class="row --reviews">
   <hr class="__break">
-  <% @all_quotes.each do |quote| %>
+  <% @all_quotes.first(3).each do |quote| %>
     <div class="quote">
       <p class="__quote-text"><%= quote[:text] %></p>
       <p class="__quote-author"><%= quote[:author] %> <span class="__quote-author-description"><%= quote[:author_description] %></span></p>
