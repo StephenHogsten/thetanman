@@ -9,7 +9,8 @@ $pink: #F1A6AB;
 $footer-height: 220px;
 
 // breakpoints
-$breakpoint-lg: 1120px;
+$breakpoint-xl: 1120px;
+$breakpoint-md: 768px;
 
 
 @mixin yellow-link {
@@ -217,7 +218,7 @@ hr {
     font-size: 1rem;
   }
 
-  @media all and (max-width: $breakpoint-lg) {
+  @media all and (max-width: $breakpoint-xl) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -369,6 +370,19 @@ hr {
   // background-position: center top;
   // background-size: contain;
   // background-repeat: no-repeat;
+
+  &.--sm {
+    display: none;
+  }
+
+  @media screen and (max-width: $breakpoint-md) {
+    &.--sm {
+      display: block;
+    }
+    &.--lg {
+      display: none;
+    }
+  }
 } 
 
 .section-title {
@@ -405,7 +419,7 @@ hr {
   font-size: 1.2rem;
   clear: both;
 
-  @media all and (max-width: $breakpoint-lg) {
+  @media all and (max-width: $breakpoint-xl) {
     font-size: 1rem;  
   }
 
@@ -414,7 +428,7 @@ hr {
     flex-direction: row;
     justify-content: space-between;
 
-    @media all and (max-width: $breakpoint-lg) {
+    @media all and (max-width: $breakpoint-xl) {
       flex-direction: column;
     }
   }
@@ -438,7 +452,7 @@ hr {
     width: 50%;
     flex: 1 1 1;
 
-    @media all and (max-width: $breakpoint-lg) {
+    @media all and (max-width: $breakpoint-xl) {
       width: 100%;
       padding: 0;
       border: none;
@@ -470,7 +484,7 @@ hr {
   justify-content: center;
   flex-wrap: wrap;
 
-  @media all and (max-width: $breakpoint-lg) {
+  @media all and (max-width: $breakpoint-xl) {
 
   }
 }
@@ -548,7 +562,7 @@ hr {
   border: none;
   font-weight: 600;
 
-  @media all and (max-width: $breakpoint-lg) {
+  @media all and (max-width: $breakpoint-xl) {
     display: block;
   }
 }
@@ -611,14 +625,14 @@ hr {
   .__book {
     margin: 0.25em 0;
 
-    @media all and (max-width: $breakpoint-lg) {
+    @media all and (max-width: $breakpoint-xl) {
       margin: 1em 0;    
     }
   }
 
   .__title {
     font-weight: bold;
-    @media all and (max-width: $breakpoint-lg) {
+    @media all and (max-width: $breakpoint-xl) {
       display: block;
     }
   }
