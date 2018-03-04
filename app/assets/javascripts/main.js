@@ -11,8 +11,12 @@ $(document).on('turbolinks:before-visit', function(event) {
   }
 })
 
-$(document).on('click', 'a[href="#"]', function(ev) {
-  ev.preventDefault();
+// $(document).on('click', 'a[href="#"]', function(ev) {
+//   ev.preventDefault();
+// })
+
+$(document).on('click', '#header-bars', function() {
+  $(this).siblings('.__links').toggleClass('--expanded');
 })
 
 $(document).on('turbolinks:load', function() {
@@ -34,6 +38,8 @@ $(document).on('turbolinks:load', function() {
         .append('<p>Message sent successfully!</p>');
     })
     .on('ajax:error', function(a, b) {
+      console.log(a);
+      console.log(b);
       $('#form-spinner').hide();
       $('#contact-us').show();
       $('#ajax-results-container').children().remove();
