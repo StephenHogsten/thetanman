@@ -382,15 +382,6 @@ hr {
     display: none;
   }
 
-  @media screen and (max-width: $breakpoint-md) {
-    &.--sm {
-      display: block;
-    }
-    &.--xl {
-      display: none;
-    }
-  }
-
   @media screen and (max-width: $breakpoint-xl) {
     &.--lg {
       display: block;
@@ -400,6 +391,19 @@ hr {
       display: none;
     }
   }
+
+  @media screen and (max-width: $breakpoint-md) {
+    &.--sm {
+      display: block;
+    }
+    &.--lg {
+      display: none;
+    }
+    &.--xl {
+      display: none;
+    }
+  }
+
 } 
 
 .section-title {
