@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'pages#home'
 
   get 'bio', to: 'pages#bio'
   get 'currently_reading', to: 'pages#currently_reading'
@@ -11,5 +12,5 @@ Rails.application.routes.draw do
 
   post 'contact', to: 'pages#contact_send'
 
-  root to: 'pages#home'
+  get '*path', to: redirect('/')
 end
