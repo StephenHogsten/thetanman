@@ -17,6 +17,7 @@ $breakpoint-md: 768px;
   color: $yellow;
   border-color: $yellow;
   text-decoration: none;
+  cursor: pointer;
   transition: color 0.5s ease-in, border-color 0.5s ease-in;
 
   &.--active,
@@ -375,11 +376,25 @@ hr {
     display: none;
   }
 
+  &.--lg {
+    display: none;
+  }
+
   @media screen and (max-width: $breakpoint-md) {
     &.--sm {
       display: block;
     }
+    &.--xl {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-xl) {
     &.--lg {
+      display: block;
+    }
+
+    &.--xl {
       display: none;
     }
   }
