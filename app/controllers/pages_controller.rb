@@ -119,6 +119,15 @@ class PagesController < ApplicationController
   end
 
   def events
+    @events = [
+      {month: "March", day: '9', time: '3:30 - 4:15', title: "AWP in Tampa, FL", subtitle: " | Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"},
+      {month: "March", day: '9', time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: " | Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
+      {month: "July", day: "17", title: 'Point Street Reading Series', location: 'Providence, RI'},
+      {month: 'July', day: '19', title: "Reading", subtitle: ' | In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
+      {month: "October", day: '13', title: 'Wisconsin Book Festival', subtitle: " (more details to come)", location: "Madison, WI"},
+      {month: "October", day: '17', title: "The Guilded Leaf Writers", location: "Carmel, Indiana"},
+      {month: "October", day: '18', title: "The Guilded Lear Book and Author Luncheon", location: "Carmel, Indiana"}
+    ]
   end
 
   def other_work

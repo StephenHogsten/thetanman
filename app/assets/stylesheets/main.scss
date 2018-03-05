@@ -461,6 +461,7 @@ hr {
 
   .__contact {
     flex-grow: 2;
+    max-width: 525px;
   }
 
   .__break {
@@ -468,6 +469,16 @@ hr {
     
     &.--invisible {
       opacity: 0;
+    }
+
+    &.--lg-only {
+      display: none;
+    }
+
+    @media all and (max-width: $breakpoint-xl) {
+      &.--lg-only {
+        display: block;
+      }
     }
   }
 }
@@ -619,6 +630,46 @@ hr {
   margin-right: 2em;
   margin-bottom: 2em;
   border: 1px $yellow solid;
+}
+
+.one-event {
+  display: flex;
+  margin: 1em 0;
+}
+
+.event-calendar {
+  height: 75px;
+  width: 75px;
+  margin: 0.5em 1em 0 0;
+  border: 1px solid $yellow;
+  border-radius: 4px;
+  padding: 0.5em;
+  text-align: center;
+
+  h4 {
+    margin: 0 0 0.5em 0;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
+}
+
+.event-details {
+  padding: 0.5em;
+
+  h4 {
+    margin: 0 0 0.5em 0;
+    font-weight: 400;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
 }
 
 .book-list {
