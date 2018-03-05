@@ -125,8 +125,8 @@ class PagesController < ApplicationController
       {month: "July", day: "17", title: 'Point Street Reading Series', location: 'Providence, RI'},
       {month: 'July', day: '19', title: "Reading", subtitle: ' | In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
       {month: "October", day: '13', title: 'Wisconsin Book Festival', subtitle: " (more details to come)", location: "Madison, WI"},
-      {month: "October", day: '17', title: "The Guilded Leaf Writers", location: "Carmel, Indiana"},
-      {month: "October", day: '18', title: "The Guilded Lear Book and Author Luncheon", location: "Carmel, Indiana"}
+      {month: "October", day: '17', title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
+      {month: "October", day: '18', title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"}
     ]
   end
 
