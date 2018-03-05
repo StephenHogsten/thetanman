@@ -145,6 +145,7 @@ hr {
   #header-bars {
     @include yellow-link();
     display: none;
+    padding:
   }
 
   .__link {
@@ -225,7 +226,7 @@ hr {
     flex-wrap: wrap;
 
     h1 {
-      flex-basis: 90%;
+      flex-basis: 85%;
     }
 
     &__desc {
@@ -236,7 +237,8 @@ hr {
 
     #header-bars {
       display: block;
-      flex-basis: 10%;
+      flex-basis: 15%;
+      padding: 10px;
     }
 
     .__links {
