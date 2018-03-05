@@ -9,6 +9,18 @@ class PagesController < ApplicationController
 
   def currently_reading
     @books = {
+      2018 => [
+        {title: 'Mad Honey Symposium', author: 'Sally Wen Mao'},
+        {title: 'Scrappy Little Nobody', author: 'Anna Kendrick'},
+        {title: 'The Wonder', author: 'Emma Donoghue'},
+        {title: 'Strange Weather in Tokyo', author: 'Hiromi Kawakami'},
+        {title: 'Harry Potter and the Order of the Phoenix', author: 'J.K. Rowling'},
+        {title: 'Talking as Fast as I Can', author: 'Lauren Graham'},
+        {title: 'Number One Chinese Restaurant', author: 'Lillian Li (Holt, June 2018)'},
+        {title: 'Elegy on Kinderklavier', author: 'Arna Bontemps Hemenway'},
+        {title: 'Red Clocks', author: 'Leni Zumas'},
+        {title: 'This is a Bust', author: 'Ed Lin'}
+      ],
       2017 => [
         { title: 'Her Body and Other Parties', author: 'Carmen Maria Machado'},
         { title: 'The Underground Railroad', author: 'Colson Whitehead'},
