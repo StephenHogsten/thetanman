@@ -25,4 +25,4 @@
 # Ignore application configuration
 /config/application.yml
 
-app/mailers/contact_autor_mailer.rb
+app/mailers/contact_author_mailer.rb
