@@ -99,7 +99,7 @@ hr {
 
 .header {
   position: relative;
-  padding: 1.25em 2em;
+  padding: 1em 2em;
   background-color: $header-green;
   
   h1 {
@@ -146,6 +146,7 @@ hr {
     @include yellow-link();
     display: none;
     padding: 10px;
+    text-align: right;
   }
 
   .__link {
@@ -226,7 +227,7 @@ hr {
     flex-wrap: wrap;
 
     h1 {
-      flex-basis: 85%;
+      flex-basis: 75%;
     }
 
     &__desc {
@@ -237,7 +238,7 @@ hr {
 
     #header-bars {
       display: block;
-      flex-basis: 15%;
+      flex-basis: 25%;
     }
 
     .__links {
