@@ -10,6 +10,8 @@ class PagesController < ApplicationController
   def currently_reading
     @books = {
       2018 => [
+        {title: 'If You Leave Me', author: 'Crystal Hana Kim (William Morrow, August 2018)'},
+        {title: 'Mother Tongues', author: 'Theodora Bishop'},
         {title: 'Mad Honey Symposium', author: 'Sally Wen Mao'},
         {title: 'Scrappy Little Nobody', author: 'Anna Kendrick'},
         {title: 'The Wonder', author: 'Emma Donoghue'},
@@ -132,13 +134,14 @@ class PagesController < ApplicationController
 
   def events
     @events = [
-      {month: "March", day: '9', time: '3:30 - 4:15', title: "AWP in Tampa, FL", subtitle: " | Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"},
-      {month: "March", day: '9', time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: " | Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
-      {month: "July", day: "17", title: 'Point Street Reading Series', location: 'Providence, RI'},
-      {month: 'July', day: '19', title: "Reading", subtitle: ' | In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
-      {month: "October", day: '13', title: 'Wisconsin Book Festival', subtitle: " (more details to come)", location: "Madison, WI"},
-      {month: "October", day: '17', title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
-      {month: "October", day: '18', title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"}
+      {date: Date.new(2018, 3, 9), time: '3:00 - 4:15', title: "AWP in Tampa, FL", subtitle: " | Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"},
+      {date: Date.new(2018, 3, 9), time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: " | Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
+      {date: Date.new(2018, 7, 17), title: 'Point Street Reading Series', location: 'Providence, RI'},
+      {date: Date.new(2018, 7, 19), title: "Reading", subtitle: ' | In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
+      {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA'},
+      {date: Date.new(2018, 10, 13), title: 'Wisconsin Book Festival', subtitle: " (more details to come)", location: "Madison, WI"},
+      {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
+      {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"}
     ]
   end
 
@@ -172,7 +175,7 @@ class PagesController < ApplicationController
     @all_quotes = [
       { text: "Lucy Tan brings to vibrant life the self-made, newly cosmopolitan Zhens, who have gone from the tea fields and silk factories of small town China to the luxury high rises of Shanghai in one generation. Abounding in insight and deftly told, What We Were Promised is a story both sweeping and intimate, as this most modern of families discovers they must confront their past in order to find their future.", author: "Maggie Shipstead", author_description: "best-selling author of Astonish Me and Seating Arrangements"}, 
       { text: "Brilliant... a revelatory novel about the ways that we learn to become and reinvent who we are. Lucy Tan has an exquisite talent for depicting the painful gravity of lost possibilities, even in a story that moves forward with such momentum that you can’t look away.", author: "Danielle Evans", author_description: "PEN award-winning author of Before You Suffocate Your Own Fool Self"}, 
-      { text: "I read What We Were Promised in a state of enchantment... Compassionate and heartbreaking, funny and wise, local and universal, What We Were Promised marks the arrival of an inspiring new voice.", author: "Chloe Benjamin", author_description: "author of The Immortalists and The Anatomy of Dreams"}, 
+      { text: "I read What We Were Promised in a state of enchantment... Compassionate and heartbreaking, funny and wise, local and universal, What We Were Promised marks the arrival of an inspiring new voice.", author: "Chloe Benjamin", author_description: "best-selling author of The Immortalists and The Anatomy of Dreams"}, 
       { text: "Skillful... An immigrant story but one that also delves into the subject of going back to one's homeland. Tan humanizes each and every one of her characters.", author: "Weike Wang", author_description: "author of Chemistry"}, 
       { text: "A big, beautiful novel... Dazzling.", author: "Hannah Pittard", author_description: "author of Visible Empire and Listen To Me"}, 
       { text: "Lucy Tan explores the identities, memories, and emotional universes of her interlocking characters with effortless control and beauty. It is a quietly brilliant book, and a truly singular debut.", author: "Arna Bontemps Hemenway", author_description: "PEN award-winning author of Elegy on Kinderklavier"}, 

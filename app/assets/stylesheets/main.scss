@@ -655,13 +655,36 @@ hr {
 
 .one-event {
   display: flex;
-  margin: 1em 0;
+  margin: 2em 0;
+
+  &:first-of-type {
+    margin-top: 3em;
+  }
+
+  &.--past {
+    // color: $light-yellow;
+
+    & > .event-calendar {
+      position: relative;
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: linear-gradient(45deg, transparent 49%, $yellow 49%, $yellow 51%, transparent 51%);
+      }
+    }
+  }
 }
 
 .event-calendar {
   height: 75px;
   width: 75px;
-  margin: 0.5em 1em 0 0;
+  margin: 0.5em 2em 0 0;
   border: 1px solid $yellow;
   border-radius: 4px;
   padding: 0.5em;

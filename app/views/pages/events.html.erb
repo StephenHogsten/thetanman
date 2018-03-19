@@ -3,16 +3,16 @@
   <hr>
 
   <p><strong>Stay tuned for more to come!</strong></p>
+  <br>
 
   <% @events.each do |event| %>
-    <div class="one-event">
+    <div class="one-event <%= "--past" if event[:date] < Date.today %>">
       <div class="event-calendar">
-        <h4><%= event[:month].slice(0, 3) %></h4>
-        <p><%= event[:day] %></p>
+        <h4><%= event[:date].strftime('%b') %></h4>
+        <p><%= event[:date].strftime('%-d') %></p>
       </div>
       <div class="event-details">
         <h4 class="event-title"><strong><%= event[:title] %></strong><%= event[:subtitle] %></h4>
-        <p><%= "#{event[:month]} #{event[:day]}" %></p>
         <% unless event[:time].to_s == '' %>
           <p><%= event[:time] %></p>
         <% end %>
