@@ -10,6 +10,10 @@ class PagesController < ApplicationController
   def currently_reading
     @books = {
       2018 => [
+        {title: 'Then She Was Gone', author: 'Lisa Jewell'},
+        {title: 'The Nakano Thrift Shop', author: 'Hiromi Kawakami'},
+        {title: 'The Friend', author: 'Sigrid Nunez'},
+        {title: 'The Incendiaries', author: 'R.O. Kwon (Riverhead, July 2018)'},
         {title: 'If You Leave Me', author: 'Crystal Hana Kim (William Morrow, August 2018)'},
         {title: 'Mother Tongues', author: 'Theodora Bishop'},
         {title: 'Mad Honey Symposium', author: 'Sally Wen Mao'},
@@ -134,12 +138,16 @@ class PagesController < ApplicationController
 
   def events
     @events = [
-      {date: Date.new(2018, 3, 9), time: '3:00 - 4:15', title: "AWP in Tampa, FL", subtitle: " | Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"},
-      {date: Date.new(2018, 3, 9), time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: " | Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
+      {date: Date.new(2018, 3, 9), time: '3:00 - 4:15', title: "AWP in Tampa, FL", subtitle: "| Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"},
+      {date: Date.new(2018, 3, 9), time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: "| Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
+      {date: Date.new(2018, 5, 19), time: '2:00 - 4:30', title: "A Writers' Panel", location: "53rd Street Library, Manhattan, NY", link: "https://www.eventbrite.com/e/a-writers-panel-tickets-45326111620?aff=efbeventtix"},
+      {date: Date.new(2018, 7, 12), title: 'Reading', subtitle: '| In conversation with Rumaan Alam', location: 'Barnes & Noble Upper East Side (86th Street), Manhattan, NY'},
       {date: Date.new(2018, 7, 17), title: 'Point Street Reading Series', location: 'Providence, RI'},
-      {date: Date.new(2018, 7, 19), title: "Reading", subtitle: ' | In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
+      {date: Date.new(2018, 7, 19), title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
+      {date: Date.new(2018, 7, 24), time: '7:00 - 9:00pm', title: "Author Event", subtitle: "(more details to come)", location: "Livingston Public Library, Livingston, NJ"},
+      {date: Date.new(2018, 8, 1), title: "Reading", subtitle: '| In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI"},
       {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA'},
-      {date: Date.new(2018, 10, 13), title: 'Wisconsin Book Festival', subtitle: " (more details to come)", location: "Madison, WI"},
+      {date: Date.new(2018, 10, 13), title: 'Wisconsin Book Festival ', subtitle: " (more details to come)", location: "Madison, WI"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"}
     ]

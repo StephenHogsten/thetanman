@@ -461,6 +461,11 @@ hr {
   &.--long-text {
     font-weight: 300;
   }
+
+  &.--highlighted {
+    text-align: center;
+    font-style: italic;
+  }
   
   .__left {
     padding-right: 1em;
@@ -737,6 +742,11 @@ hr {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  &.--centered {
+    justify-content: center;
+    padding-top: 20px;
+  }
 }
 
 .social-icon {
