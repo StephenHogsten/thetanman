@@ -140,7 +140,7 @@ class PagesController < ApplicationController
     @events = [
       {date: Date.new(2018, 3, 9), time: '3:00 - 4:15', title: "AWP in Tampa, FL", subtitle: "| Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"},
       {date: Date.new(2018, 3, 9), time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: "| Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
-      {date: Date.new(2018, 5, 19), time: '2:00 - 4:30', title: "A Writers' Panel", location: "53rd Street Library, Manhattan, NY", link: "https://www.eventbrite.com/e/a-writers-panel-tickets-45326111620?aff=efbeventtix"},
+      {date: Date.new(2018, 5, 19), time: '2:00 - 4:30', title: "A Writers' Panel", location: "New York Public Library's 53rd St Branch, Manhattan, NY", link: "https://www.eventbrite.com/e/a-writers-panel-tickets-45326111620?aff=efbeventtix"},
       {date: Date.new(2018, 7, 12), title: 'Reading', subtitle: '| In conversation with Rumaan Alam', location: 'Barnes & Noble Upper East Side (86th Street), Manhattan, NY'},
       {date: Date.new(2018, 7, 17), title: 'Point Street Reading Series', location: 'Providence, RI'},
       {date: Date.new(2018, 7, 19), title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
