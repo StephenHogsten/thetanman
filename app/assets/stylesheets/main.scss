@@ -598,10 +598,6 @@ header {
   @include yellow-link();
   border: none;
   font-weight: 600;
-
-  @media all and (max-width: $breakpoint-xl) {
-    display: block;
-  }
 }
 
 .book-cover-container {
