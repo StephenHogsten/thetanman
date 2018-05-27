@@ -10,6 +10,9 @@ class PagesController < ApplicationController
   def currently_reading
     @books = {
       2018 => [
+        {title: 'Dopesick: Dealers, Doctors, and The Drug Company That Addicted America', author: 'Beth Macy (Little Brown, August 2018)'},
+        {title: 'Manhattan Beach', author: 'Jennifer Egan'},
+        {title: 'Broken Harbor', author: 'Tana French'},
         {title: 'Then She Was Gone', author: 'Lisa Jewell'},
         {title: 'The Nakano Thrift Shop', author: 'Hiromi Kawakami'},
         {title: 'The Friend', author: 'Sigrid Nunez'},
