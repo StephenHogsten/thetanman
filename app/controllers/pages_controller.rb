@@ -147,10 +147,11 @@ class PagesController < ApplicationController
       {date: Date.new(2018, 7, 12), title: 'Reading', subtitle: '| In conversation with Rumaan Alam', location: 'Barnes & Noble Upper East Side (86th Street), Manhattan, NY'},
       {date: Date.new(2018, 7, 17), title: 'Point Street Reading Series', location: 'Providence, RI'},
       {date: Date.new(2018, 7, 19), title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY"},
-      {date: Date.new(2018, 7, 24), time: '7:00 - 9:00pm', title: "Author Event", subtitle: "(more details to come)", location: "Livingston Public Library, Livingston, NJ"},
+      {date: Date.new(2018, 7, 24), time: '7:00 - 8:30pm', title: "Reading and Signing", location: "Livingston Public Library, Livingston, NJ", link: 'https://www.eventbrite.com/e/meet-the-author-lucy-tan-what-we-were-promised-tickets-46684340118'},
       {date: Date.new(2018, 8, 1), title: "Reading", subtitle: '| In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI"},
       {date: Date.new(2018, 8, 31), time: "8/31 through 9/2", title: "AJC Decatur Book Festival", subtitle: "(more details to come)", location: "Decatur, GA"},
       {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA'},
+      {date: Date.new(2018, 9, 20), time: '7:00 PM', title: "Asian American Writers' Workshop", subtitle: "| Reading with Vanessa Hua and Crystal Hana Kim (more info to come)", location: "New York, NY"},
       {date: Date.new(2018, 10, 13), title: 'Wisconsin Book Festival ', subtitle: " (more details to come)", location: "Madison, WI"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"}

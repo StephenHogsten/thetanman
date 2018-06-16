@@ -6,7 +6,10 @@
   <br>
 
   <% @events.each do |event| %>
-    <%= content_tag (event[:link] ? :a : :div), class: event[:date] < Date.today ? "one-event --past" : "one-event", href: event[:link] do %>
+    <% classes = ['one-event'] %>
+    <% classes << '--past' if event[:date] < Date.today %>
+    <% classes << '--link' if event[:link].present? %>
+    <%= content_tag (event[:link] ? :a : :div), class: classes.join(' '), href: event[:link], target: "_blank" do %>
       <div class="event-calendar">
         <h4><%= event[:date].strftime('%b') %></h4>
         <p><%= event[:date].strftime('%-d') %></p>

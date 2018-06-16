@@ -680,6 +680,14 @@ header {
       }
     }
   }
+
+  &.--link {
+    @include yellow-link();
+
+    &:hover .event-calendar {
+      border-color: $pink;
+    }
+  }
 }
 
 .event-calendar {
@@ -690,6 +698,7 @@ header {
   border-radius: 4px;
   padding: 0.5em;
   text-align: center;
+  transition: border-color 0.5s ease-in;
 
   h4 {
     margin: 0 0 0.5em 0;
