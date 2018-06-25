@@ -19,6 +19,18 @@ $(document).on('click', '#header-bars', function() {
   $(this).siblings('.__links').toggleClass('--expanded');
 })
 
+// let google track that they clicked a social link
+$(document).on('click', '.social-icon', function(ev) {
+  var source = $(ev.target).attr('src').split('/')[2].split('_')[0]
+  ga('set', 'dimension2', source);
+})
+
+// let google track that they clicked a pre-order link
+$(document).on('click', '.purchase-button', function(ev, el) {
+  var source = $(ev.target).attr('alt')
+  ga('set', 'dimension1', source);
+})
+
 $(document).on('turbolinks:load', function() {
   // I believe some events need to be bound to elements rather than just the body
 
