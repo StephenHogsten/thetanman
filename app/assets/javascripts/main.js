@@ -22,13 +22,19 @@ $(document).on('click', '#header-bars', function() {
 // let google track that they clicked a social link
 $(document).on('click', '.social-icon', function(ev) {
   var source = $(ev.target).attr('src').split('/')[2].split('_')[0]
-  ga('set', 'dimension2', source);
+  gtag('event', 'Social Link', {
+    event_category: 'External Link', 
+    event_label: source
+  })
 })
 
 // let google track that they clicked a pre-order link
-$(document).on('click', '.purchase-button', function(ev, el) {
+$(document).on('click', '.purchase-button', function(ev) {
   var source = $(ev.target).attr('alt')
-  ga('set', 'dimension1', source);
+  gtag('event', 'Purchase Link', {
+    event_category: 'External Link', 
+    event_label: source
+  })
 })
 
 $(document).on('turbolinks:load', function() {
