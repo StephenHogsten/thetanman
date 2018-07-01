@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org",
+  "@type": "LiteraryEvent",
+  "about": <%= render "jsonld/wwwp.json" %>,
+  <% if event[:person] %>
+    "contributor": {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "<%= event[:person] %>"
+    },
+  <% elsif event[:people] %>
+    "contributor": [
+    <% event[:people].each_with_index do |person, idx| %>
+      "contributor": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "<%= person %>"
+      }<%= ',' unless idx == event[:people].count - 1 %>
+    <% end %>
+    ],
+  <% end %>
+  "performer": <%= render "jsonld/lucy.json" %>,
+  <% name = event[:subtitle].nil? ? event[:title] : event[:title] + event[:subtitle] %>
+  "name": "<%= name %>",
+  <% if false %>
+    "location": "<%= event[:location] %>",
+  <% end %>
+  "startDate": "<%= event[:date].iso8601 %>"
+
+  <%# todo - 
+    make the times more accurate
+    make the locations more accurate 
+    add free where applicable
+  %>
+}

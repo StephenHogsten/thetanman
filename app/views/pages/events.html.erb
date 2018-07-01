@@ -5,22 +5,33 @@
   <p><strong>Stay tuned for more to come!</strong></p>
   <br>
 
-  <% @events.each do |event| %>
-    <% classes = ['one-event'] %>
-    <% classes << '--past' if event[:date] < Date.today %>
-    <% classes << '--link' if event[:link].present? %>
-    <%= content_tag (event[:link] ? :a : :div), class: classes.join(' '), href: event[:link], target: "_blank" do %>
-      <div class="event-calendar">
-        <h4><%= event[:date].strftime('%b') %></h4>
-        <p><%= event[:date].strftime('%-d') %></p>
-      </div>
-      <div class="event-details">
-        <h4 class="event-title"><strong><%= event[:title] %></strong> <%= event[:subtitle] %></h4>
-        <% unless event[:time].to_s == '' %>
-          <p><%= event[:time] %></p>
-        <% end %>
-        <p><em><%= event[:location] %></em></p>
-      </div>
+  <div class="events">
+    <% @events.each do |event| %>
+      <% classes = ['one-event'] %>
+      <% classes << '--past' if event[:date] < Date.today %>
+      <% classes << '--link' if event[:link].present? %>
+      <%= content_tag (event[:link] ? :a : :div), class: classes.join(' '), href: event[:link], target: "_blank" do %>
+        <div class="event-calendar">
+          <h4><%= event[:date].strftime('%b') %></h4>
+          <p><%= event[:date].strftime('%-d') %></p>
+        </div>
+        <div class="event-details">
+          <h4 class="event-title"><strong><%= event[:title] %></strong> <%= event[:subtitle] %></h4>
+          <% unless event[:time].to_s == '' %>
+            <p><%= event[:time] %></p>
+          <% end %>
+          <p><em><%= event[:location] %></em></p>
+        </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
+
+
+<% if false %>
+<script type="application/ld+json">
+<% @events.each do |event| %>
+  <%= render 'jsonld/event.json', event: event %>
+<% end %>
+</script>
+<% end %>
