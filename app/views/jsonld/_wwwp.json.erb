@@ -1,0 +1,103 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Book",
+  "name": "What We Were Promised",
+  "author": <%= render 'jsonld/lucy.json' %>,
+  "comment": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "Lucy Tan brings to vibrant life the self-made, newly cosmopolitan Zhens, who have gone from the tea fields and silk factories of small town China to the luxury high rises of Shanghai in one generation. Abounding in insight and deftly told, What We Were Promised is a story both sweeping and intimate, as this most modern of families discovers they must confront their past in order to find their future.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Maggie Shipstead"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "Brilliant... a revelatory novel about the ways that we learn to become and reinvent who we are. Lucy Tan has an exquisite talent for depicting the painful gravity of lost possibilities, even in a story that moves forward with such momentum that you can’t look away.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Danielle Evans"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "I read What We Were Promised in a state of enchantment... Compassionate and heartbreaking, funny and wise, local and universal, What We Were Promised marks the arrival of an inspiring new voice.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Chloe Benjamin"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "Skillful... An immigrant story but one that also delves into the subject of going back to one's homeland. Tan humanizes each and every one of her characters.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Weike Wang"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "A big, beautiful novel... Dazzling.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Hannah Pittard"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "Lucy Tan explores the identities, memories, and emotional universes of her interlocking characters with effortless control and beauty. It is a quietly brilliant book, and a truly singular debut.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Arna Bontemps Hemenway"
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Comment",
+      "text": "From its first page the novel promises a mix of emotion and intellect, plot and cultural critique, and it delivers... By the end of What We Were Promised you will agree that the real promise belongs to its debut author. Put Lucy Tan on your literary radar now.",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Matthew Salesses"
+      }
+    }
+  ],
+  "datePublished": "2018-07-10",
+  "editor": {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Judy Clain",
+    "jobTitle": [
+      "Vice President",
+      "Editor-in-Chief"
+    ],
+    "worksFor": <%= render "jsonld/little_brown.json" %>
+  },
+  "keywords": "debut,china,Shanhai,family,love,class",
+  "publisher": <%= render "jsonld/hachette.json" %>,
+  "publisherImprint": <%= render "jsonld/little_brown.json" %>,
+  "image": "<%= asset_path 'wwwp-cover.jpg' %>",
+  "isbn": "9780316437189",
+  "award": "Longlisted for the 2018 Center for Fiction First Novel Prize",
+  "numberOfPages": 336,
+  "sameAs": [
+    "https://www.indiebound.org/book/9780316437189",
+    "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858",
+    "https://www.amazon.com/gp/product/0316437182",
+    "https://itunes.apple.com/us/book/what-we-were-promised/id1308142947",
+    "https://www.goodreads.com/book/show/32349400-what-we-were-promised"
+  ]
+}
