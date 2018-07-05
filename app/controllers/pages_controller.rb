@@ -146,7 +146,7 @@ class PagesController < ApplicationController
       {date: Date.new(2018, 5, 19), time: '2:00 - 4:30', title: "Mochi Mag Presents: A Writers' Panel", location: "New York Public Library's 53rd St Branch, Manhattan, NY", link: "https://www.eventbrite.com/e/a-writers-panel-tickets-45326111620?aff=efbeventtix"},
       {date: Date.new(2018, 7, 12), time: '7:00 PM', title: 'Reading', subtitle: '| In conversation with Rumaan Alam', location: 'Barnes & Noble Upper East Side (86th Street), Manhattan, NY'},
       {date: Date.new(2018, 7, 17), title: 'Point Street Reading Series', location: 'Providence, RI'},
-      {date: Date.new(2018, 7, 19), time: '7:00 PM', title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY", person: "Weike Wang"},
+      {date: Date.new(2018, 7, 19), time: '7:30 PM', title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY", person: "Weike Wang"},
       {date: Date.new(2018, 7, 24), time: '7:00 - 8:30pm', title: "Reading and Signing", location: "Livingston Public Library, Livingston, NJ", link: 'https://www.eventbrite.com/e/meet-the-author-lucy-tan-what-we-were-promised-tickets-46684340118'},
       {date: Date.new(2018, 8, 1), title: "Reading", subtitle: '| In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI", person: "Lillian Li"},
       {date: Date.new(2018, 8, 31), time: "8/31 through 9/2", title: "AJC Decatur Book Festival", subtitle: "(more details to come)", location: "Decatur, GA"},
