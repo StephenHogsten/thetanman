@@ -606,6 +606,10 @@ header {
     align-self: stretch;
     padding: 5px;
     background: white;
+
+    &.--black {
+      background: black;
+    }
   }
   
   &__img {
