@@ -361,6 +361,10 @@ header {
   text-decoration: underline;
 }
 
+.std-link {
+  @include yellow-link();
+}
+
 .main-container {
   // opacity: 0;
   padding: 0 1em;
