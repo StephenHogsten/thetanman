@@ -1,9 +1,22 @@
 <div class="row">
-  <h1 class='section-title'>Other Work</h1>
+  <h1 class="section-title">Essays and Articles</h1>
+  <hr>
 </div>
 
 <div class="row">
+  <div class="press-grid">
+    <% @articles.each do |item| %>
+      <%= render 'press_item', item: item %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <h1 class='section-title'>Other Work</h1>
   <hr>
+</div>
+
+<div class="row">
   <div class="other-work">
     <%= image_tag 'safety_of_numbers.jpg', class: '__thumb' %>
     <div class="__text">

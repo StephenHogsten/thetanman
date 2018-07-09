@@ -376,6 +376,16 @@ class PagesController < ApplicationController
   end
 
   def other_work
+    @articles = [
+      {
+        date: Date.new(2018, 7, 8),
+        background: "tan",
+        link: "https://lithub.com/on-falling-in-love-with-the-language-id-spent-my-whole-life-speaking/",
+        img_src: '/lithub.png',
+        source: "Literary Hub",
+        title: "On Falling in Love with the Language I’ve Spoken My Entire Life"
+      }
+    ]
   end
 
   def contact
