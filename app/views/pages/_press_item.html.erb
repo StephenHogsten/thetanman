@@ -1,0 +1,19 @@
+<%# expects item with properties for link, img_src, source, and title %>
+
+<% unless item[:img_cover] %>
+  <div class="press-grid__img-container <%= "--#{item[:background]}" if item[:background].present? %>">
+    <div class="press-grid__img-contain" style='background:url("<%= item[:img_src] %>") no-repeat center / contain'></div>
+    <!-- <img src="<%= item[:img_src] %>" alt="<%= item[:source] %>" class="press-grid__img"> -->
+  </div>
+<% else %>
+  <div class='press-grid__img-cover' style='background-image:url("<%= item[:img_src] %>")'></div>
+<% end %>
+<a href="<%= item[:link] %>" target="_blank" class='press-grid__link'>
+  <h6 class='press-grid__title'><%= item[:title] %></h6>
+  <p class="press-grid__source">
+    <%= item[:source] %>
+    <% unless item[:date].nil? %>
+      <span class="press-grid__date"><%= item[:date].strftime('%b %-d, %Y') %></span>
+    <% end %>
+  </p>
+</a>
