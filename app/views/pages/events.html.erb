@@ -7,21 +7,19 @@
 
   <div class="events">
     <% @events.each do |event| %>
-      <% classes = ['one-event'] %>
-      <% classes << '--past' if event[:date] < Date.today %>
-      <% classes << '--link' if event[:link].present? %>
-      <%= content_tag (event[:link] ? :a : :div), class: classes.join(' '), href: event[:link], target: "_blank" do %>
-        <div class="event-calendar">
-          <h4><%= event[:date].strftime('%b') %></h4>
-          <p><%= event[:date].strftime('%-d') %></p>
-        </div>
-        <div class="event-details">
-          <h4 class="event-title"><strong><%= event[:title] %></strong> <%= event[:subtitle] %></h4>
-          <% unless event[:time].to_s == '' %>
-            <p><%= event[:time] %></p>
-          <% end %>
-          <p><em><%= event[:location] %></em></p>
-        </div>
+      <% extra_classes = [] %>
+      <% extra_classes << '--past' if event[:date] < Date.today %>
+      <% extra_classes << '--link' if event[:link].present? %>
+      <%= content_tag (event[:link] ? :a : :div), class: 'event-calendar ' + extra_classes.join(' '), href: event[:link], target: "_blank" do %>
+        <h4><%= event[:date].strftime('%b') %></h4>
+        <p><%= event[:date].strftime('%-d') %></p>
+      <% end %>
+      <%= content_tag (event[:link] ? :a : :div), class: 'event-details ' + extra_classes.join(' '), href: event[:link], target: "_blank" do %>
+        <h4 class="event-title"><strong><%= event[:title] %></strong> <%= event[:subtitle] %></h4>
+        <% unless event[:time].to_s == '' %>
+          <p><%= event[:time] %></p>
+        <% end %>
+        <p><em><%= event[:location] %></em></p>
       <% end %>
     <% end %>
   </div>
