@@ -148,7 +148,7 @@ class PagesController < ApplicationController
         link: "http://petrichorzine.com/share.php?trackid=15",
         img_src: "http://petrichorzine.com/img/logo.jpg",
         source: "Petrichor",
-        title: "Safety of Number Audio Recording Released",
+        title: '"Safety of Numbers" Audio Recording Released',
       },
       {
         date: Date.new(2018, 6, 24),
@@ -270,6 +270,7 @@ class PagesController < ApplicationController
     @interviews = [
       {
         date: Date.new(2017, 9, 30),
+        background: "yellow",
         link: "https://soundcloud.com/jackson-tobin-922865676/episode-five-book-deal-w-lucy-tan",
         img_src: "https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/5a/38/3d/5a383d73-bcd3-088a-114c-863e59e18c7a/source/170x170bb.jpg",
         source: "Write & Eat Podcast",
