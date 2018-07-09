@@ -4,6 +4,29 @@
 </div>
 
 <div class="row">
+  <div class="press-grid">
+    <% @news.each do |item| %>
+      <% unless item[:img_cover] %>
+        <div class="press-grid__img-container">
+          <img src="<%= item[:img_src] %>" alt="<%= item[:source] %>" class="press-grid__img">
+        </div>
+      <% else %>
+        <div class='press-grid__img-cover' style="background-image:url(<%= item[:img_src] %>)"></div>
+      <% end %>
+      <a href="<%= item[:link] %>" target="_blank" class='press-grid__link'>
+        <h6 class='press-grid__title'><%= item[:title] %></h6>
+        <p class="press-grid__source">
+          <%= item[:source] %>
+          <% unless item[:date].nil? %>
+            <span class="press-grid__date"><%= item[:date].strftime('%b %-d, %Y') %></span>
+          <% end %>
+        </p>
+      </a>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
   <ul class='press-items'>
     <li class="press-item"><a href="http://centerforfiction.org/awards/the-first-novel-prize/2018-first-novel-prize-long-list/" target="_blank" class="press-link">What We Were Promised longlisted for the 2018 Center for Fiction First Novel Prize</a></li>
     <li class="press-item">PopSugar: <a href="https://www.popsugar.com/entertainment/photo-gallery/44898477/image/44899192/What-We-Were-Promised" target="_blank" class="press-link">30 Must-Read Books to Bring on Your Summer Vacation</a></li>
@@ -24,3 +47,4 @@
     <li class="press-item">Write + Eat: <a href="https://itunes.apple.com/us/podcast/write-eat/id1279365830?mt=2" target="_blank" class="press-link">Episode 5: The Book Deal</a></li>
   </ul>
 </div>
+

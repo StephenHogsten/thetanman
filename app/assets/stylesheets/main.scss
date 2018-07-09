@@ -590,6 +590,53 @@ header {
   }
 }
 
+.press-grid {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 3rem 1rem;
+  gap: 3rem 1rem;
+
+  &__img-container {
+    position: relative;
+    align-self: stretch;
+    padding: 5px;
+    background: white;
+  }
+  
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 10px);
+    max-height: calc(100% - 10px);
+  }
+  
+  &__img-cover {
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__link {
+    @include yellow-link();
+  }
+
+  &__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+  }
+
+  &__source {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  &__date {
+    padding-left: 0.5rem;
+    font-style: italic;
+  }
+}
+
 .press-items {
   list-style-type: square;
 }

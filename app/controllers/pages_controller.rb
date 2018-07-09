@@ -137,6 +137,21 @@ class PagesController < ApplicationController
   end
 
   def news
+    @news = [
+      {
+        link: "http://centerforfiction.org/awards/the-first-novel-prize/2018-first-novel-prize-long-list/",
+        img_src: "http://centerforfiction.org/images/logo.gif",
+        source: "The Center For Fiction",
+        title: "What We Were Promised longlisted for the 2018 Center for Fiction First Novel Prize",
+      },
+      {
+        link: "https://www.popsugar.com/entertainment/Best-Summer-Books-2018-44898477?stream_view=1",
+        img_src: "https://media1.popsugar-assets.com/static/imgs/ps-dot-logo.svg?1501884776",
+        source: "Pop Sugar",
+        title: "30 Must-Read Books to Bring on Your Summer Vacation",
+        date: Date.new(2018, 6, 24)
+      }
+    ]
   end
 
   def events
