@@ -136,6 +136,9 @@ class PagesController < ApplicationController
     
   end
 
+  def book_club
+  end
+
   def news
     @news = [
       {
