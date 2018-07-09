@@ -611,7 +611,7 @@ header {
     position: relative;
     align-self: stretch;
     padding: 5px;
-    min-height: 120px;
+    min-height: 100px;
     background: white;
 
     &.--black {
@@ -620,6 +620,14 @@ header {
 
     &.--yellow {
       background: #f8d73e;
+    }
+
+    &.--gray {
+      background: #767d7b;
+    }
+
+    @media all and (max-width: $breakpoint-md) {
+      min-height: 120px;
     }
   }
   
