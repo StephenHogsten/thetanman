@@ -186,6 +186,7 @@ class PagesController < ApplicationController
       },
       {
         date: Date.new(2018, 5, 31),
+        background: "black",
         link: "https://www.youtube.com/watch?v=djlOUHFHvFA",
         img_src: "https://static.wixstatic.com/media/c55dbc_7dd440d5f30d4ad191a5346fb38ce1bb~mv2.png/v1/fill/w_660,h_115,al_c,usm_0.66_1.00_0.01/c55dbc_7dd440d5f30d4ad191a5346fb38ce1bb~mv2.png",
         source: "Ink and Paper Blog",
