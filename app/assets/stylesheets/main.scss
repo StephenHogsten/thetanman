@@ -592,19 +592,26 @@ header {
 
 .press-grid {
   display: grid;
-  grid-template-columns: 13.5% 1fr;
+  grid-template-columns: minmax(200px, 13.5%) 1fr;
   grid-gap: 3rem 1rem;
   gap: 3rem 1rem;
 
+  @media all and (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
   &__img-contain {
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
   }
 
   &__img-container {
     position: relative;
     align-self: stretch;
     padding: 5px;
+    min-height: 120px;
     background: white;
 
     &.--black {
@@ -630,6 +637,10 @@ header {
 
   &__link {
     @include yellow-link();
+
+    @media all and (max-width: $breakpoint-md) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__title {
