@@ -1,5 +1,5 @@
 <div class="row">
-  <h1 class='section-title'>News</h1>
+  <h1 class='section-title'>Mentions in the Media</h1>
   <hr>
 </div>
 
@@ -8,7 +8,8 @@
     <% @news.each do |item| %>
       <% unless item[:img_cover] %>
         <div class="press-grid__img-container">
-          <img src="<%= item[:img_src] %>" alt="<%= item[:source] %>" class="press-grid__img">
+          <div class="press-grid__img-contain" style="background:url(<%= item[:img_src] %>) white no-repeat center / contain"></div>
+          <!-- <img src="<%= item[:img_src] %>" alt="<%= item[:source] %>" class="press-grid__img"> -->
         </div>
       <% else %>
         <div class='press-grid__img-cover' style="background-image:url(<%= item[:img_src] %>)"></div>
@@ -29,22 +30,39 @@
 <div class="row">
   <ul class='press-items'>
     <li class="press-item"><a href="http://centerforfiction.org/awards/the-first-novel-prize/2018-first-novel-prize-long-list/" target="_blank" class="press-link">What We Were Promised longlisted for the 2018 Center for Fiction First Novel Prize</a></li>
+
     <li class="press-item">PopSugar: <a href="https://www.popsugar.com/entertainment/photo-gallery/44898477/image/44899192/What-We-Were-Promised" target="_blank" class="press-link">30 Must-Read Books to Bring on Your Summer Vacation</a></li>
+
     <li class="press-item">Modern Mrs. Darcy: <a href="https://modernmrsdarcy.com/summer-reading-guide-2018" target="_blank" class="press-link">Summer Reading Guide 2018</a>, <a href="https://modernmrsdarcy.com/minimalist-summer-reading-guide-2018/" target="_blank" class="press-link">Minimalist Summer Reading Guide 2018</a>, <a href="https://modernmrsdarcy.com/133-episode/" target="_blank" class="press-link">Podcast Review</a></li>
+
     <li class="press-item">My Domaine: <a href="https://www.mydomaine.com/best-new-books-for-summer-2018--5b05bc439f958" target="_blank" class="press-link">Most Anticipated Books of Summer 2018</a></li>
+
     <li class="press-item">iBooks names WWWP a <a href="https://twitter.com/iBooks/status/996799975102263297" target="_blank" class="press-link">Most Anticipated Book of Summer</a></li>
+
     <li class="press-item"><a href="https://creativewriting.wisc.edu/fellows.html" target="_blank" class="press-link">Lucy Tan awarded the James C. McCreight Fellowship from the Wisconsin Institute of Creative Writing</a></li>
+
     <li class="press-item"><a href="https://best-books.publishersweekly.com/pw/best-books/summer-reads-2018/fiction#book/book-12" target="_blank" class="press-link"><i>Publishers Weekly</i> names WWWP a  "Best Book of Summer"</a></li>
+
     <li class="press-item"><a href="https://www.barnesandnoble.com/blog/announcing-discover-great-new-writers-summer-2018-selections/" target="_blank" class="press-link">WWWP chosen for the Barnes &amp; Noble Discover Great New Writers Program</a></li>
+
     <li class="press-item"><a href="https://www.kirkusreviews.com/book-reviews/lucy-tan/what-we-were-promised/" target="_blank" class="press-link"><i>Kirkus </i>reviews "What We Were Promised"</a></li>
+
     <li class="press-item"><a href="https://www.southernliving.com/culture/summer-books-2018" target="_blank" class="press-link"><i>Southern Living</i> names WWWP a "Best New Book of Summer 2018"</a></li>
+
     <li class="press-item">She Reads: <a href="https://shereads.com/this-summers-must-read-debuts/" target="_blank" class="press-link">Summer's Must-Read Debuts</a>, <a href="https://shereads.com/2018-diverse-books-of-summer/" target="_blank" class="press-link">2018 Diverse Books of Summer</a></li>
+
     <li class="press-item">Publishers Marketplace: <a href="https://lunch.publishersmarketplace.com/2018/01/buzz-books-spring-summer-preview-literary-debut-fiction/" target="_blank" class="press-link">Buzz Books Spring/Summer Preview: Literary &amp; Debut Fiction</a></li>
+
     <li class="press-item">Library Journal: <a href="http://reviews.libraryjournal.com/2018/01/prepub/fiction-previews/summer-debuts-fiction-previews-jul-2018/" target="_blank" class="press-link">Summer Debuts | Fiction Previews</a></li>
+
     <li class="press-item">Bustle: <a href="https://www.bustle.com/p/19-debut-novels-coming-out-in-2018-that-you-definitely-wont-want-to-miss-7649015" target="_blank" class="press-link">19 Debut Novels Coming Out in 2018 That You Definitely Won't Want to Miss</a></li>
+
     <li class="press-item">Huffington Post: <a href="https://www.huffingtonpost.com/entry/2018-book-preview_us_5a383493e4b0c65287aba20b" target="_blank" class="press-link">60 Books We Can't Wait to Read in 2018</a></li>
+
     <li class="press-item">Electric Literature: <a href="https://electricliterature.com/46-books-by-women-of-color-to-read-in-2018-70a0bf5bf4f2" target="_blank" class="press-link">46 Books By Women of Color to Read in 2018</a></li>
+
     <li class="press-item">Write + Eat: <a href="https://itunes.apple.com/us/podcast/write-eat/id1279365830?mt=2" target="_blank" class="press-link">Episode 5: The Book Deal</a></li>
+
   </ul>
 </div>
 

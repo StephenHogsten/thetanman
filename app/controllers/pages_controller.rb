@@ -145,12 +145,32 @@ class PagesController < ApplicationController
         title: "What We Were Promised longlisted for the 2018 Center for Fiction First Novel Prize",
       },
       {
+        date: Date.new(2018, 6, 24),
         link: "https://www.popsugar.com/entertainment/Best-Summer-Books-2018-44898477?stream_view=1",
         img_src: "https://media1.popsugar-assets.com/static/imgs/ps-dot-logo.svg?1501884776",
         source: "Pop Sugar",
-        title: "30 Must-Read Books to Bring on Your Summer Vacation",
-        date: Date.new(2018, 6, 24)
+        title: "30 Must-Read Books to Bring on Your Summer Vacation"
+      },
+      {
+        link: "https://modernmrsdarcy.com/summer-reading-guide-2018",
+        img_src: "https://modernmrsdarcy.com/wp-content/uploads/2017/03/mmd-logo-handmade-400.png",
+        source: "Modern Mrs. Darcy",
+        title: "Summer Reading Guide 2018"
+      },
+      {
+        link: "https://modernmrsdarcy.com/minimalist-summer-reading-guide-2018/",
+        img_src: "https://modernmrsdarcy.com/wp-content/uploads/2017/03/mmd-logo-handmade-400.png",
+        source: "Modern Mrs. Darcy",
+        title: "Minimalist Summer Reading Guide 2018"
+      },
+      {
+        date: Date.new(2018, 5, 22),
+        link: "https://modernmrsdarcy.com/133-episode/",
+        img_src: "https://modernmrsdarcy.com/wp-content/uploads/2017/03/mmd-logo-handmade-400.png",
+        source: "Modern Mrs. Darcy",
+        title: "Podcast Review",
       }
+
     ]
   end
 
