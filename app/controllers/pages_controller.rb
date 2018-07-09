@@ -136,7 +136,7 @@ class PagesController < ApplicationController
     
   end
 
-  def book_club
+  def cocktails
   end
 
   def news
