@@ -750,6 +750,7 @@ header {
 .book-list {
   .__book {
     margin: 0.25em 0;
+    font-size: 0.9em;
 
     @media all and (max-width: $breakpoint-xl) {
       margin: 1em 0;    
@@ -758,6 +759,8 @@ header {
 
   .__title {
     font-style: italic;
+    font-size: 1.2em;
+
     @media all and (max-width: $breakpoint-xl) {
       display: block;
     }
