@@ -755,6 +755,10 @@ header {
   margin: 1em 0;
   padding: 1em;
   border: 1px solid $yellow;
+
+  @media all and (max-width: $breakpoint-md) {
+    max-width: 100%;
+  }
 }
 
 .inline-img {
