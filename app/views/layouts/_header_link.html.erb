@@ -5,7 +5,7 @@
 <li class='header-link-dropdown'>
   <% if local_assigns[:children] %>
     <% child_id = "child-of-#{link}" %>
-    <%= link_to link.titleize, local_assigns[:parent_link].to_sym, class: '__link --no-fade' %>
+    <%= link_to link.titleize, local_assigns[:parent_link].to_sym, class: '__link' %>
     <div class='__sublink-container' id=<%= child_id %>>
       <% children.each do |child| %>
         <%= link_to child.titleize, child.to_sym, class: '__sublink' %>
