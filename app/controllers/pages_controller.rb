@@ -1,4 +1,4 @@
-class PagesController < ApplicationController
+  class PagesController < ApplicationController
   before_action :set_quotes, only: [:home, :what_we_were_promised]
 
   def home
@@ -366,10 +366,13 @@ class PagesController < ApplicationController
       {date: Date.new(2018, 7, 19), time: '7:30 PM', title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY", person: "Weike Wang", link: 'https://www.facebook.com/events/2080753235582528/'},
       {date: Date.new(2018, 7, 24), time: '7:00 - 8:30pm', title: "Reading and Signing", location: "Livingston Public Library, Livingston, NJ", link: 'https://www.eventbrite.com/e/meet-the-author-lucy-tan-what-we-were-promised-tickets-46684340118'},
       {date: Date.new(2018, 8, 1), time: '7:00 PM', title: "Reading", subtitle: '| In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI", person: "Lillian Li", link: 'https://www.literatibookstore.com/event/fiction-literati-lucy-tan'},
+      {date: Date.new(2018, 8, 2), time: '6:00 PM', title: 'Reading & Discussion', subtitle: 'with Lillian Li', location: "Pages Bookshop, Detroit, MI", person: "Lillian Li"},
+      {date: Date.new(2018, 8, 3), time: '4:00 PM', title: 'Author Visit', location: "Mountain Ridge Country Club, West Caldwell, NJ"},
       {date: Date.new(2018, 8, 31), time: "8/31 through 9/2", title: "AJC Decatur Book Festival", subtitle: "(more details to come)", location: "Decatur, GA"},
       {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA', person: "Stephen Hitchcock", link: 'https://ndbookshop.com/events/lucy-tan-and-stephen-hitchcock/'},
       {date: Date.new(2018, 9, 20), time: '7:00 PM', title: "Asian American Writers' Workshop", subtitle: "| Reading with Vanessa Hua and Crystal Hana Kim (more info to come)", location: "New York, NY", people: ['Vanessa Hua', 'Crystal Hana Kim']},
       {date: Date.new(2018, 10, 12), title: 'Wisconsin Book Festival ', subtitle: " (date recently changed)", location: "Madison, WI"},
+      {date: Date.new(2018, 10, 13), title: "Harrisburg Book Festival", location: "Harrisburg, PA"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"}
     ]
