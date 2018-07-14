@@ -382,7 +382,7 @@
       {date: Date.new(2018, 8, 1), time: '7:00 PM', title: "Reading", subtitle: '| In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI", person: "Lillian Li", link: 'https://www.literatibookstore.com/event/fiction-literati-lucy-tan'},
       {date: Date.new(2018, 8, 2), time: '6:00 PM', title: 'Reading & Discussion', subtitle: 'with Lillian Li', location: "Pages Bookshop, Detroit, MI", person: "Lillian Li"},
       {date: Date.new(2018, 8, 3), time: '4:00 PM', title: 'Author Visit', location: "Mountain Ridge Country Club, West Caldwell, NJ"},
-      {date: Date.new(2018, 8, 31), time: "8/31 through 9/2", title: "AJC Decatur Book Festival", subtitle: "(more details to come)", location: "Decatur, GA"},
+      {date: Date.new(2018, 9, 1), time: "1:45 - 2:30", title: "AJC Decatur Book Festival", location: "Decatur, GA"},
       {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA', person: "Stephen Hitchcock", link: 'https://ndbookshop.com/events/lucy-tan-and-stephen-hitchcock/'},
       {date: Date.new(2018, 9, 20), time: '7:00 PM', title: "Asian American Writers' Workshop", subtitle: "| Reading with Vanessa Hua and Crystal Hana Kim (more info to come)", location: "New York, NY", people: ['Vanessa Hua', 'Crystal Hana Kim']},
       {date: Date.new(2018, 10, 12), title: 'Wisconsin Book Festival ', subtitle: " (date recently changed)", location: "Madison, WI"},
