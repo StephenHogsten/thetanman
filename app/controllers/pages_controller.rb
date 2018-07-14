@@ -345,6 +345,20 @@
 
     @interviews = [
       {
+        date: Date.new(2018, 7, 11),
+        link: 'https://www.readingwomenpodcast.com/blog/interview-with-lucy-tan',
+        img_src: '//static1.squarespace.com/static/58435fdf37c581d99d8c1f43/t/587d2434414fb5c9a57665fe/1531496752223/?format=1500w',
+        source: "Reading Women",
+        title: "Podcast Interview"
+      },
+      {
+        date: Date.new(2018, 7, 12),
+        link: 'https://www.youtube.com/watch?v=7TBQ_SRPeCU',
+        img_src: '/writing_fun.jpg',
+        source: "Writing Fun",
+        title: "Shanghai with Lucy Tan"
+      },
+      {
         date: Date.new(2017, 9, 30),
         background: "yellow",
         link: "https://soundcloud.com/jackson-tobin-922865676/episode-five-book-deal-w-lucy-tan",
