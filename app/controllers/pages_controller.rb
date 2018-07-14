@@ -142,6 +142,14 @@
   def news
     @news = [
       {
+        date: Date.new(2018, 7, 13),
+        background: 'cs-yellow',
+        link: 'https://www.csmonitor.com/Books/Book-Reviews/2018/0713/What-We-Were-Promised-depicts-post-Mao-China-in-a-deft-debut-novel-set-in-Shanghai',
+        img_src: 'https://www.csmonitor.com/extension/csm_base/design/csm_design/images/csm-masthead_232x60.png',
+        source: 'The Christian Science Monitor',
+        title: "'What We Were Promised' depicts post-Mao China in a deft debut novel set in Shanghai"
+      },
+      {
         date: Date.new(2018, 7, 10),
         link: 'https://www.usatoday.com/story/life/books/2018/07/10/book-review-what-we-were-promised-lucy-tan-chinese-american-expats/721926002/',
         img_src: 'https://www.gannett-cdn.com/sites/usatoday/images/site-masthead-logo-dark@2x.png',
