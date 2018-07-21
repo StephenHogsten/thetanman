@@ -142,6 +142,13 @@
   def news
     @news = [
       {
+        date: Date.new(2018, 7, 18),
+        link: 'https://www.bustle.com/p/what-we-were-promised-by-lucy-tan-is-a-stunning-novel-about-the-promises-we-make-to-ourselves-each-other-9768193',
+        img_src: "https://cdn.bustle.com/bustle/production/public/logo-5f0141.svg",
+        source: 'Bustle',
+        title: "'What We Were Promised' By Lucy Tan Is A Stunning Novel About The Promises We Make To Ourselves & Each Other"
+      },
+      {
         date: Date.new(2018, 7, 13),
         background: 'cs-yellow',
         link: 'https://www.csmonitor.com/Books/Book-Reviews/2018/0713/What-We-Were-Promised-depicts-post-Mao-China-in-a-deft-debut-novel-set-in-Shanghai',
