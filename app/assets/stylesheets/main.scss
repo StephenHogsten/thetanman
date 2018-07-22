@@ -644,6 +644,14 @@ header {
       background: #767d7b;
     }
 
+    &.--red {
+      background: #cc3333;
+    }
+
+    &.--isthmus-red {
+      background: #ce1337;
+    }
+
     @media all and (max-width: $breakpoint-md) {
       min-height: 120px;
     }
