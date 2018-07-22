@@ -219,7 +219,7 @@
         background: "gray",
         img_src: "http://media.shelf-awareness.com/site/img/logo2.png",
         source: "Shelf Awareness",
-        title: "Reviwe: What We Were Promised"
+        title: "Review: What We Were Promised"
       },
       {
         date: Date.new(2018, 6, 18),
