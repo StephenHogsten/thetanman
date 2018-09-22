@@ -143,7 +143,7 @@
     
   end
 
-  def cocktails
+  def book_club
   end
 
   def news
