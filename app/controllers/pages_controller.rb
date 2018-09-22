@@ -1,7 +1,9 @@
   class PagesController < ApplicationController
-  before_action :set_quotes, only: [:home, :what_we_were_promised]
+  before_action :set_quotes, only: %i(home what_we_were_promised)
+  before_action :set_reviews, only: %i(home what_we_were_promised)
 
   def home
+    
   end
 
   def bio
@@ -579,13 +581,28 @@
   private
   def set_quotes
     @all_quotes = [
-      { text: "I read What We Were Promised in a state of enchantment... Compassionate and heartbreaking, funny and wise, local and universal, What We Were Promised marks the arrival of an inspiring new voice.", author: "Chloe Benjamin", author_description: "best-selling author of The Immortalists and The Anatomy of Dreams"}, 
+      { text: "I read <i>What We Were Promised</i> in a state of enchantment... Compassionate and heartbreaking, funny and wise, local and universal, What We Were Promised marks the arrival of an inspiring new voice.", author: "Chloe Benjamin", author_description: "best-selling author of The Immortalists and The Anatomy of Dreams"}, 
       { text: "Lucy Tan brings to vibrant life the self-made, newly cosmopolitan Zhens, who have gone from the tea fields and silk factories of small town China to the luxury high rises of Shanghai in one generation. Abounding in insight and deftly told, What We Were Promised is a story both sweeping and intimate, as this most modern of families discovers they must confront their past in order to find their future.", author: "Maggie Shipstead", author_description: "best-selling author of Astonish Me and Seating Arrangements"}, 
       { text: "Brilliant... a revelatory novel about the ways that we learn to become and reinvent who we are. Lucy Tan has an exquisite talent for depicting the painful gravity of lost possibilities, even in a story that moves forward with such momentum that you can’t look away.", author: "Danielle Evans", author_description: "PEN award-winning author of Before You Suffocate Your Own Fool Self"}, 
       { text: "Skillful... An immigrant story but one that also delves into the subject of going back to one's homeland. Tan humanizes each and every one of her characters.", author: "Weike Wang", author_description: "author of Chemistry"}, 
       { text: "A big, beautiful novel... Dazzling.", author: "Hannah Pittard", author_description: "author of Visible Empire and Listen To Me"}, 
       { text: "Lucy Tan explores the identities, memories, and emotional universes of her interlocking characters with effortless control and beauty. It is a quietly brilliant book, and a truly singular debut.", author: "Arna Bontemps Hemenway", author_description: "PEN award-winning author of Elegy on Kinderklavier"}, 
       { text: "From its first page the novel promises a mix of emotion and intellect, plot and cultural critique, and it delivers... By the end of What We Were Promised you will agree that the real promise belongs to its debut author. Put Lucy Tan on your literary radar now.", author: "Matthew Salesses", author_description: "best-selling author of The Hundred Year Flood"}
+    ]
+  end
+
+  def set_reviews
+    @reviews = [
+      {text: "<i>What We Were Promised</i> glows through its intimate, skillful prose. Tan’s debut is a beautiful reckoning with the ever-changing definition of “home” – what it means to have, lose and find family again.", pub: "USA Today"},
+      {text: "A luminous family saga.", pub: "Entertainment Weekly"},
+      {text: "Tan's talent as a storyteller clearly shines through her strong plot lines and characterization; readers will want to know more about each well-crafted player in the story . . . . A novel of class, culture, and expectations; readers who enjoyed works like Kevin Kwan's Crazy Rich Asians will likely find Tan's surprising and down-to-earth tale an entertaining read.", pub: "Library Journal"},
+      {text: "Against a contemporary global backdrop, made empathic with a multigenerational family saga, embellished with timeless servant/master (and mistress) class conflict, Tan’s debut will be entertaining – and enlightening – savvy cosmopolitan readers throughout the summer and beyond.", pub: "Christian Science Monitor"},
+      {text: "The real joy of this book is getting lost in the characters, some of whom will remain with you long after you have finished the novel. Lucy Tan is an author to watch.", pub: "Omnivorous: The Amazon Book Review"},
+      {text: "As the narrative jumps across decades and continents, it throws the rural villages and urban skylines, as well as the lives of locals and aloof ex-patriates into sharp relief.", pub: "TIME"},
+      {text: "Tan examines the tension behind the facade of the moneyed lifestyle in a still-evolving post-Mao Shanghai, where everyone seems to be an expat in their own country.", pub: "Kirkus Reviews"},
+      {text: "Tan’s novel is a vivid family chronicle, a compelling mystery, and an incisive look at wealth and privilege among Chinese-born, American-educated citizens.", pub: "Publishers Weekly"},
+      {text: "With its measuring of expectation against reality, <i>What We Were Promised</i> establishes Tan as a new talent with a sharp eye for the intricacies of human relationships.", pub: "Shelf Awareness"},
+      {text: "Tan’s first novel is beautiful and compassionate as it explores how identity is reinvented and the importance of confronting the past to move into the future.", pub: "Booklist"}
     ]
   end
 
