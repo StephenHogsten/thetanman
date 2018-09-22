@@ -80,6 +80,11 @@ hr {
   margin-left: 0;
 }
 
+ol > li {
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
 #flash-messages {
   position: fixed;
   bottom: 0;
@@ -601,6 +606,7 @@ header {
 }
 
 .press-grid {
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: minmax(200px, 13.5%) 1fr;
   grid-gap: 3rem 1rem;
