@@ -447,6 +447,14 @@
 
     @interviews = [
       {
+        date: Date.new(2018, 8, 17),
+        background: 'black',
+        link: 'https://www.kollabsf.org/kollabblog/2018/8/8/kollabsfgetslit-with-lucy-tan',
+        img_src: 'https://static1.squarespace.com/static/59c0961659cc686922385cf3/t/5a7beb690d9297c235398f65/1537083899816/?format=1500w',
+        source: 'Kollaboration San Fransisco',
+        title: '#KollabSFGetsLit with Lucy Tan, Author of What We Were Promised'
+      },
+      {
         date: Date.new(2018, 7, 31),
         link: 'https://themillions.com/2018/07/lucy-tan-and-crystal-hana-kim-discuss-societal-roles-war-secrets-and-the-complications-of-love.html',
         img_src: 'https://themillions.com/wp-content/themes/millions-v2/dist/images/millions-logo.svg',
