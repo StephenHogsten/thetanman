@@ -76,7 +76,7 @@
   <hr class="__break">
   <% @reviews.each do |review| %>
     <div class="quote">
-      <p class="__quote-text"><%= raw(review[:text]) %> <span class="__quote-publication"><%= review[:pub] %></span></p>
+      <p class="__quote-text">"<%= raw(review[:text]) %>" <span class="__quote-publication"><%= review[:pub] %></span></p>
     </div>
   <% end %>
 </div>
