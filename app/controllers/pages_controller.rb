@@ -3,13 +3,14 @@
   before_action :set_reviews, only: %i(home what_we_were_promised)
 
   def home
-    
   end
 
   def bio
   end
 
   def currently_reading
+    @title = "Lucy Tan - Currently Reading"
+    @description = "See what Lucy Tan is currently reading"
     @books = {
       2018 => [
         {title: 'Dopesick: Dealers, Doctors, and The Drug Company That Addicted America', author: 'Beth Macy (Little Brown, August 2018)'},
@@ -142,13 +143,16 @@
   end
 
   def what_we_were_promised
-    
+    @title = "What We Were Promised - Debut Novel by Lucy Tan"    
   end
 
   def book_club
+    @title = "Book Club recommendations for What We Were Promised"
   end
 
   def news
+    @title = "What We Were Promised and Lucy Tan in the News"
+    @description = "Highlights of interviews and news articles about Lucy Tan and What We Were Promised"
     @reviews = []
     @news = [
       {
@@ -506,6 +510,9 @@
   end
 
   def events
+    @title = "Lucy Tan - Events"
+    @description = "Lucy is on the move! See the upcoming schedule to see if an event is coming to a city near you!"
+
     @events = [
       {date: Date.new(2018, 12, 20), time: '7:30 PM', title: 'Pete\'s Reading Series', subtitle: 'presented by Kundiman', location: '709 Lorimer Street, Williamsburg, BK' },
       {date: Date.new(2018, 12, 8), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', location: "2021 Winnebago Street, Madison, Wisconsin"},
@@ -530,6 +537,8 @@
   end
 
   def other_work
+    @title = "Lucy Tan - Other Work"
+    @description = "Short stories and articles by author Lucy Tan"
     @articles = [
       {
         date: Date.new(2018, 7, 8),
@@ -557,6 +566,8 @@
   end
 
   def contact
+    @title = "Lucy Tan - Contact"
+    @description = "Get in touch with Lucy to schedule an interview, event, or a video call into a book club."
   end
 
   #POST /contact

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lucy Tan - Author</title>
+    <title><%= @title || "Lucy Tan - Debut Author of What We Were Promised" %></title>
+    <meta name='description' content=<%= @description || 'Lucy Tan is the author of "What We Were Promised", available now from Little, Brown (Hachette Book Group). Though raised in the suburbs of New Jersey, she has spent most of the past ten years in New York City and Shanghai. Her stories explore these and other spaces, with special focus on characters who have a shifting sense of what they call "home."' %>>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
