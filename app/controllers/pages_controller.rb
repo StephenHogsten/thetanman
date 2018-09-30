@@ -156,6 +156,13 @@
     @reviews = []
     @news = [
       {
+        date: Date.new(2018, 8, 23),
+        link: 'https://www.milwaukeemag.com/books-to-cozy-up-with-this-fall-2018/',
+        source: 'Milwaukee Magazine',
+        img_src: 'https://11pt5z46nuudt9qxx2knwgff-wpengine.netdna-ssl.com/wp-content/uploads/2015/01/MilMag_Logo_Web_padding_558x74_v2.png',
+        title: '5 Books to Cozy Up With This Fall'
+      },
+      {
         date: Date.new(2018, 8, 15),
         link: 'https://www.washingtonpost.com/entertainment/books/now-that-hollywood-is-interested-in-asian-stories-here-are-other-books-that-should-be-movies/2018/08/14/60092ca8-9f0b-11e8-93e3-24d1703d2a7a_story.html?noredirect=on&utm_term=.e03ad76d5a52',
         source: 'The Washington Post',
@@ -452,6 +459,13 @@
     ]
 
     @interviews = [
+      { 
+        date: Date.new(2018, 8, 29),
+        link: "https://www.barnesandnoble.com/blog/imagine-your-way-into-another-life-lucy-tan-and-chloe-benjamin-in-conversation/",
+        img_src: "http://www.barnesandnobleinc.com/wp-content/uploads/logo.svg",
+        source: "Barnes & Noble",
+        title: "Imagine Your Way Into Another Life: Lucy Tan and Chloe Benjamin in Conversation"
+      },
       {
         date: Date.new(2018, 8, 17),
         background: 'black',
@@ -474,6 +488,13 @@
         img_src: 'https://isthmus.com/api/design-49ad55fd1cd41fd3b0840f2fae1752c8/isthmus-logo.png',
         source: 'The Isthmus',
         title: 'A writer learns to listen'
+      },
+      {
+        date: Date.new(2018, 7, 18),
+        link: 'https://www.bustle.com/p/what-we-were-promised-by-lucy-tan-is-a-stunning-novel-about-the-promises-we-make-to-ourselves-each-other-9768193',
+        img_src: "https://cdn.bustle.com/bustle/production/public/logo-5f0141.svg",
+        source: 'Bustle',
+        title: "'What We Were Promised' By Lucy Tan Is A Stunning Novel About The Promises We Make To Ourselves & Each Other"
       },
       {
         date: Date.new(2018, 7, 13),
