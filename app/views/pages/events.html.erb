@@ -51,10 +51,12 @@
 </div>
 
 
-<% if false %>
-<script type="application/ld+json">
+<% if true %>
 <% @events.each do |event| %>
-  <%= render 'jsonld/event.json', event: event %>
+  <% if event[:schema_location] %>
+    <script type="application/ld+json">
+      <%= render 'jsonld/event.json', event: event %>
+    </script>
+  <% end %>
 <% end %>
-</script>
 <% end %>

@@ -19,13 +19,28 @@
     <% end %>
     ],
   <% end %>
+  "description": "<%= event[:description] || event[:subtitle].nil? ? event[:title] : event[:title] + event[:subtitle] %>",
   "performer": <%= render "jsonld/lucy.json" %>,
   <% name = event[:subtitle].nil? ? event[:title] : event[:title] + event[:subtitle] %>
   "name": "<%= name %>",
-  <% if false %>
-    "location": "<%= event[:location] %>",
-  <% end %>
-  "startDate": "<%= event[:date].iso8601 %>"
+  "location": {
+    "@context": "http://schema.org",
+    "@type": "Place",
+    "name": "<%= event[:schema_location][:name] %>",
+    "address": {
+      "@context": "http://schema.org",
+      "@type": "PostalAddress",
+      "streetAddress": "<%= event[:schema_location][:street_address] %>",
+      "addressLocality": "<%= event[:schema_location][:city] %>",
+      "addressRegion": "<%= event[:schema_location][:state] %>",
+      "postalCode": "<%= event[:schema_location][:zip] %>"
+    }
+  },
+  "mainEntityOfPage": "<%= event[:link] %>",
+  "startDate": "<%= event[:date].iso8601 %>",
+  "endDate": "<%= event[:date].iso8601 %>",
+  "image": "<%= event[:image] || asset_url('wwwp-cover.jpg') %>",
+  "isAccessibleForFree": "true"
 
   <%# todo - 
     make the times more accurate

@@ -540,8 +540,37 @@
       {date: Date.new(2018, 12, 8), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', location: "2021 Winnebago Street, Madison, Wisconsin"},
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
-      {date: Date.new(2018, 10, 13), title: "Harrisburg Book Festival", location: "Harrisburg, PA"},
-      {date: Date.new(2018, 10, 12), time: '6:00 PM', title: 'Wisconsin Book Festival ', subtitle: " (date recently changed)", location: "Cenral Library - The Bubbler, Madison, WI", link: 'https://wisconsinbookfestival.org/events/what-we-were-promised'},
+      {
+        date: Date.new(2018, 10, 13), 
+        title: "Harrisburg Book Festival", 
+        subtitle: "| Portraits of Home: A Conversation with Lucy Tan and Crystal Hana Kim", 
+        person: "Crystal Hana Kim",
+        location: "Midtown Scholar Bookstore, Harrisburg, PA",
+        schema_location: {
+          name: 'Midtown Scholar Bookstore',
+          street_address: '1302 North Third Street',
+          city: 'Harrisburg',
+          state: 'PA',
+          zip: 17102
+        },
+        link: 'https://www.hbgbookfest.com/lucy-tan'
+      },
+      {
+        date: Date.new(2018, 10, 12), 
+        time: '6:00 PM', 
+        title: 'Wisconsin Book Festival ', 
+        subtitle: " (date recently changed)", 
+        location: "Central Library - The Bubbler, Madison, WI", 
+        schema_location: {
+          name: 'Madison Central Library',
+          street_address: '201 W Mifflin St',
+          zip: 53703,
+          city: 'Madison',
+          state: 'WI'
+        },
+        link: 'https://wisconsinbookfestival.org/events/what-we-were-promised',
+        description: 'Reading of What We Were Promised by debut author Lucy Tan'
+      },
       {date: Date.new(2018, 9, 27), time: '1:00 PM', title: 'Reading and Discussion with Mary Terrier', location: 'Edgewood College, Predolin 329'},
       {date: Date.new(2018, 9, 20), time: '7:00 PM', title: "What We Leave Behind: Lucy Tan, Crystal Hana Kim, and Vanessa Hua", location: "New York, NY", people: ['Vanessa Hua', 'Crystal Hana Kim'], link: 'https://www.eventbrite.com/e/what-we-leave-behind-lucy-tan-crystal-hana-kim-and-vanessa-hua-tickets-48165758079#'},
       {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA', person: "Stephen Hitchcock", link: 'https://ndbookshop.com/events/lucy-tan-and-stephen-hitchcock/'},
