@@ -13,6 +13,7 @@
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2018 => [
+        {title: 'There, There', author: 'Tommy Orange'},
         {title: 'Dopesick: Dealers, Doctors, and The Drug Company That Addicted America', author: 'Beth Macy (Little Brown, August 2018)'},
         {title: 'Asymmetry', author: 'Lisa Halliday'},
         {title: 'The Magicians', author: 'Lev Grossman'},
@@ -540,7 +541,8 @@
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 13), title: "Harrisburg Book Festival", location: "Harrisburg, PA"},
-      {date: Date.new(2018, 10, 12), title: 'Wisconsin Book Festival ', subtitle: " (date recently changed)", location: "Madison, WI"},
+      {date: Date.new(2018, 10, 12), time: '6:00 PM', title: 'Wisconsin Book Festival ', subtitle: " (date recently changed)", location: "Cenral Library - The Bubbler, Madison, WI", link: 'https://wisconsinbookfestival.org/events/what-we-were-promised'},
+      {date: Date.new(2018, 9, 27), time: '1:00 PM', title: 'Reading and Discussion with Mary Terrier', location: 'Edgewood College, Predolin 329'},
       {date: Date.new(2018, 9, 20), time: '7:00 PM', title: "What We Leave Behind: Lucy Tan, Crystal Hana Kim, and Vanessa Hua", location: "New York, NY", people: ['Vanessa Hua', 'Crystal Hana Kim'], link: 'https://www.eventbrite.com/e/what-we-leave-behind-lucy-tan-crystal-hana-kim-and-vanessa-hua-tickets-48165758079#'},
       {date: Date.new(2018, 9, 8), time: '7:00 PM', title: 'Reading with Stephen Hitchcock', location: 'New Dominion Bookshop, Charlottesville, VA', person: "Stephen Hitchcock", link: 'https://ndbookshop.com/events/lucy-tan-and-stephen-hitchcock/'},
       {date: Date.new(2018, 9, 1), time: "1:45 - 2:30", title: "AJC Decatur Book Festival", location: "Decatur, GA"},
