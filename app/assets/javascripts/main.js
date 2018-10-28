@@ -67,4 +67,22 @@ $(document).on('turbolinks:load', function() {
         .append('<p>Message not sent, please try again later.</p>')
     });
 
+  var activeGalleryIdx = 0
+  $(document).on('click', '.js-gallery-left', function(ev) {
+    ev.preventDefault()
+    $('.gallery__image-container.--active').removeClass('--active')
+    var children = $('.gallery__images').children()
+    activeGalleryIdx = (activeGalleryIdx - 1 + children.length) % children.length
+    console.log('activeGalleryIdx', activeGalleryIdx);
+    children[activeGalleryIdx].classList += ' --active'
+  })
+  
+  $(document).on('click', '.js-gallery-right', function(ev) {
+    ev.preventDefault()
+    $('.gallery__image-container.--active').removeClass('--active')
+    var children = $('.gallery__images').children()
+    activeGalleryIdx = (activeGalleryIdx + 1 + children.length) % children.length
+    console.log('activeGalleryIdx', activeGalleryIdx);
+    children[activeGalleryIdx].classList += ' --active'
+  })
 });
