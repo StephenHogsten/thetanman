@@ -171,6 +171,13 @@
         title: 'Now that Hollywood is interested in Asian stories, here are other books that should be movies'        
       },
       {
+        date: Date.new(2018, 8, 13),
+        link: 'https://electricliterature.com/finding-home-in-the-country-you-left-2ac96b9c2275',
+        source: "Electric Literature",
+        img_src: "https://cdn-images-1.medium.com/letterbox/480/72/50/50/1*dKJR-1lOwP9XFYKzLvl-Iw.png?source=logoAvatar-be69ce71416c---e470410858b4",
+        title: 'Trading the American Dream for the Promise of a New China'
+      },
+      {
         date: Date.new(2018, 8, 4),
         link: 'https://www.popsugar.com/entertainment/Books-Like-Crazy-Rich-Asians-45036022?stream_view=1#photo-45036133',
         source: 'Pop Sugar',
@@ -476,6 +483,13 @@
         title: '#KollabSFGetsLit with Lucy Tan, Author of What We Were Promised'
       },
       {
+        date: Date.new(2018, 8, 13),
+        link: 'https://electricliterature.com/finding-home-in-the-country-you-left-2ac96b9c2275',
+        source: "Electric Literature",
+        img_src: "https://cdn-images-1.medium.com/letterbox/480/72/50/50/1*dKJR-1lOwP9XFYKzLvl-Iw.png?source=logoAvatar-be69ce71416c---e470410858b4",
+        title: 'Trading the American Dream for the Promise of a New China'
+      },
+      {
         date: Date.new(2018, 7, 31),
         link: 'https://themillions.com/2018/07/lucy-tan-and-crystal-hana-kim-discuss-societal-roles-war-secrets-and-the-complications-of-love.html',
         img_src: 'https://themillions.com/wp-content/themes/millions-v2/dist/images/millions-logo.svg',
@@ -538,6 +552,21 @@
     @events = [
       {date: Date.new(2018, 12, 20), time: '7:30 PM', title: 'Pete\'s Reading Series', subtitle: 'presented by Kundiman', location: '709 Lorimer Street, Williamsburg, BK' },
       {date: Date.new(2018, 12, 8), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', location: "2021 Winnebago Street, Madison, Wisconsin"},
+      {
+        date: Date.new(2018, 12, 6),
+        time: '5:00 PM',
+        title: 'Power and Money and Wisconsin Women Writers',
+        subtitle: 'A panel presented by Milwaukee Repertory Theater',
+        location: 'Woodland Pattern, 720 East Locust St, Milwaukee, WI',
+        schema_location: {
+          name: 'Woodland Pattern Book Center Inc',
+          street_address: '720 East Locust Street',
+          city: 'Milwaukee',
+          state: 'WI',
+          zip: '53212'
+        },
+        link: 'https://www.eventbrite.com/e/power-money-wisconsin-writers-tickets-51565335306'
+      },
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
       {
