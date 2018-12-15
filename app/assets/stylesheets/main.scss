@@ -776,6 +776,16 @@ header {
     font-size: 0.9em;
     font-style: italic;
   }
+
+  #mcsweeneys-container {
+    margin-right: 2em;
+    background: white;
+
+    .__thumb {
+      width: 65px;
+      margin: 5px;
+    }
+  }
 }
 
 .cocktail {
