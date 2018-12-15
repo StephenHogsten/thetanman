@@ -551,7 +551,7 @@
 
     @events = [
       {date: Date.new(2018, 12, 20), time: '7:30 PM', title: 'Pete\'s Reading Series', subtitle: 'presented by Kundiman', location: '709 Lorimer Street, Williamsburg, BK' },
-      {date: Date.new(2018, 12, 8), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', location: "2021 Winnebago Street, Madison, Wisconsin"},
+      {date: Date.new(2018, 12, 15), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', subtitle: '*date recently changed', location: "2021 Winnebago Street, Madison, Wisconsin"},
       {
         date: Date.new(2018, 12, 6),
         time: '5:00 PM',
@@ -566,6 +566,9 @@
           zip: '53212'
         },
         link: 'https://www.eventbrite.com/e/power-money-wisconsin-writers-tickets-51565335306'
+      },
+      {
+        date: Date.new(2018, 12, 5), time: '6:00 PM', title: 'Author Talk: Greenwood High School Library', location: '306 W Central Ave., Greenwood, WI'
       },
       {date: Date.new(2018, 10, 18), title: "The Guilded Leaf Book and Author Luncheon", location: "Carmel, Indiana"},
       {date: Date.new(2018, 10, 17), title: "The Guilded Leaf Writers at the Pavilion", location: "Carmel, Indiana"},
