@@ -630,6 +630,13 @@
     @description = "Short stories and articles by author Lucy Tan"
     @articles = [
       {
+        date: Date.new(2018, 12, 14),
+        link: 'https://themillions.com/2018/12/a-year-in-reading-lucy-tan.html',
+        img_src: 'https://themillions.com/wp-content/themes/millions-v2/dist/images/millions-logo.svg',
+        source: 'The Millions',
+        title: 'A Year in Reading: Lucy Tan'
+      },
+      {
         date: Date.new(2018, 7, 8),
         background: "tan",
         link: "https://lithub.com/on-falling-in-love-with-the-language-id-spent-my-whole-life-speaking/",
