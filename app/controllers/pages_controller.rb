@@ -13,6 +13,11 @@
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2018 => [
+        {title: 'The Hate U Give', author: 'Angie Thomas'},
+        {title: 'A Man Called Ove', author: 'Fredrik Backman'},
+        {title: 'The Wrong Heaven', author: 'Amy Bonnaffons'},
+        {title: 'A River of Stars', author: 'Vanessa Hua'},
+        {title: 'The Last Time I Lied', author: 'Riley Sager'},
         {title: 'There, There', author: 'Tommy Orange'},
         {title: 'Dopesick: Dealers, Doctors, and The Drug Company That Addicted America', author: 'Beth Macy (Little Brown, August 2018)'},
         {title: 'Asymmetry', author: 'Lisa Halliday'},
