@@ -555,6 +555,63 @@
     @description = "Lucy is on the move! See the upcoming schedule to see if an event is coming to a city near you!"
 
     @events = [
+      {
+        date: Date.new(2019, 5, 23),
+        title: 'Book Club Cafe',
+        subtitle: '(more info to come)',
+        location: 'Madison Public Library, 201 W Mifflin St, Madison, WI',
+        schema_location: {
+          name: 'Madison Public Library',
+          street_address: '201 W Mifflin St',
+          city: 'Madison',
+          state: 'WI',
+          zip: '53703'
+        }
+      },
+      {
+        date: Date.new(2019, 4, 25),
+        time: '7:00 PM',
+        title: 'Reading',
+        subtitle: 'The UW Program in Creative Writing present 2018-19 Wisconsin Institute for Creative Writing Poetry & Fiction Fellows',
+        location: 'Madison Public Libray\'s Community Room, 201 W Mifflin St, Madison WI',
+        schema_location: {
+          name: 'Madison Public Library',
+          street_address: '201 W Mifflin St',
+          city: 'Madison',
+          state: 'WI',
+          zip: '53703'
+        }
+      },
+      {
+        date: Date.new(2019, 3, 28),
+        time: '3:00 - 4:15 PM',
+        title: 'AWP in Portland',
+        subtitle: 'Debut Authors: Navigating all the seasons of book publications, with Ingrid Rojas Contreras, Crystal Hana Kim, Lillian Li, and Lydia Kiesling',
+        location: '8110-112, Oregon Convention Center, Level 1',
+        schema_location: {
+          name: 'Oregon Convention Center',
+          street_adress: '777 NE Martin Luther King Jr Blvd',
+          city: 'Portland',
+          state: 'OR',
+          zip: '97232'
+        }
+      },
+      {
+        date: Date.new(2019, 2, 26), 
+        time: '7:00 PM', 
+        title: 'Author Talk', 
+        subtitle: 'In conversation with Chloe Benjamin, author of \'The Immortalists\'', 
+        location: 'Boswell Book Company, 2559 N. Downer Ave., Milwaukee, WI',
+        schema_location: {
+          name: 'Boswell Book Company',
+          street_address: '2559 N. Downer Ave.',
+          city: 'Milwaukee',
+          state: 'WI',
+          zip: '53211'
+        },
+        person: 'Chloe Benjamin',
+        link: 'https://www.facebook.com/events/348983449165286/'
+      },
       {date: Date.new(2018, 12, 20), time: '7:30 PM', title: 'Pete\'s Reading Series', subtitle: 'presented by Kundiman', location: '709 Lorimer Street, Williamsburg, BK' },
       {date: Date.new(2018, 12, 15), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', subtitle: '*date recently changed', location: "2021 Winnebago Street, Madison, Wisconsin"},
       {
