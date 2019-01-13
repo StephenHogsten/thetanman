@@ -12,7 +12,12 @@
     @title = "Lucy Tan - Currently Reading"
     @description = "See what Lucy Tan is currently reading"
     @books = {
+      2019 => [
+        {title: 'Eye Level', author: 'Jenny Xie'},
+        {title: 'Less', author: 'Andrew Sean Greer'}
+      ],
       2018 => [
+        {title: 'The Recovering: Intoxication and its Aftermath', author: 'Leslie Jamison'},
         {title: 'The Hate U Give', author: 'Angie Thomas'},
         {title: 'A Man Called Ove', author: 'Fredrik Backman'},
         {title: 'The Wrong Heaven', author: 'Amy Bonnaffons'},
