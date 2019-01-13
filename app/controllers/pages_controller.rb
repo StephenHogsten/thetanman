@@ -613,7 +613,6 @@
         link: 'https://www.facebook.com/events/348983449165286/'
       },
       {date: Date.new(2018, 12, 20), time: '7:30 PM', title: 'Pete\'s Reading Series', subtitle: 'presented by Kundiman', location: '709 Lorimer Street, Williamsburg, BK' },
-      {date: Date.new(2018, 12, 15), time: '7:00 PM', title: 'Watershed Reading Series at the Arts and Literature Laboratory', subtitle: '*date recently changed', location: "2021 Winnebago Street, Madison, Wisconsin"},
       {
         date: Date.new(2018, 12, 6),
         time: '5:00 PM',
