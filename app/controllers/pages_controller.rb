@@ -14,7 +14,9 @@
     @books = {
       2019 => [
         {title: 'Eye Level', author: 'Jenny Xie'},
-        {title: 'Less', author: 'Andrew Sean Greer'}
+        {title: 'Less', author: 'Andrew Sean Greer'},
+        {title: 'My Name is Lucy Barton', author: 'Elizabeth Strout'},
+        {title: "There's a Word for That", author: 'Sloane Tanen (Little, Brown, April 2019)'}
       ],
       2018 => [
         {title: 'The Recovering: Intoxication and its Aftermath', author: 'Leslie Jamison'},
@@ -37,8 +39,8 @@
         {title: 'Then She Was Gone', author: 'Lisa Jewell'},
         {title: 'The Nakano Thrift Shop', author: 'Hiromi Kawakami'},
         {title: 'The Friend', author: 'Sigrid Nunez'},
-        {title: 'The Incendiaries', author: 'R.O. Kwon (Riverhead, July 2018)'},
-        {title: 'If You Leave Me', author: 'Crystal Hana Kim (William Morrow, August 2018)'},
+        {title: 'The Incendiaries', author: 'R.O. Kwon'},
+        {title: 'If You Leave Me', author: 'Crystal Hana Kim'},
         {title: 'Mother Tongues', author: 'Theodora Bishop'},
         {title: 'Mad Honey Symposium', author: 'Sally Wen Mao'},
         {title: 'Scrappy Little Nobody', author: 'Anna Kendrick'},
@@ -46,7 +48,7 @@
         {title: 'Strange Weather in Tokyo', author: 'Hiromi Kawakami'},
         {title: 'Harry Potter and the Order of the Phoenix', author: 'J.K. Rowling'},
         {title: 'Talking as Fast as I Can', author: 'Lauren Graham'},
-        {title: 'Number One Chinese Restaurant', author: 'Lillian Li (Holt, June 2018)'},
+        {title: 'Number One Chinese Restaurant', author: 'Lillian Li'},
         {title: 'Elegy on Kinderklavier', author: 'Arna Bontemps Hemenway'},
         {title: 'Red Clocks', author: 'Leni Zumas'},
         {title: 'This is a Bust', author: 'Ed Lin'}
