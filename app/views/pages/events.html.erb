@@ -35,7 +35,7 @@
         <p><%= event[:date].strftime('%-d') %></p>
       <% end %>
       <%= content_tag (event[:link] ? :a : :div), class: 'event-details ' + extra_classes.join(' '), href: event[:link], target: "_blank" do %>
-        <h4 class="event-title"><strong><%= event[:title] %></strong> <%= event[:subtitle] %></h4>
+        <h4 class="event-title"><strong><%= event[:title] %></strong> <%= "| #{event[:subtitle]}" unless event[:subtitle].nil? %></h4>
         <% unless event[:time].to_s == '' %>
           <p><%= event[:time] %></p>
         <% end %>
@@ -59,7 +59,7 @@
         <p><%= event[:date].strftime('%-d') %></p>
       <% end %>
       <%= content_tag (event[:link] ? :a : :div), class: 'event-details ' + extra_classes.join(' '), href: event[:link], target: "_blank" do %>
-        <h4 class="event-title"><strong><%= event[:title] %></strong> <%= event[:subtitle] %></h4>
+        <h4 class="event-title"><strong><%= event[:title] %></strong> <%= "| #{event[:subtitle]}" unless event[:subtitle].nil? %></h4>
         <% unless event[:time].to_s == '' %>
           <p><%= event[:time] %></p>
         <% end %>

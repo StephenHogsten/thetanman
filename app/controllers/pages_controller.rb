@@ -561,9 +561,15 @@
 
     @events = [
       {
+        date: Date.new(2019, 4, 18),
+        title: 'North Central College',
+        subtitle: '(more info to come!)',
+        location: 'Naperville, IL'
+      },
+      {
         date: Date.new(2019, 5, 23),
         title: 'Book Club Cafe',
-        subtitle: '(more info to come)',
+        subtitle: '(more info to come!)',
         location: 'Madison Public Library, 201 W Mifflin St, Madison, WI',
         schema_location: {
           name: 'Madison Public Library',
@@ -641,7 +647,7 @@
       {
         date: Date.new(2018, 10, 13), 
         title: "Harrisburg Book Festival", 
-        subtitle: "| Portraits of Home: A Conversation with Lucy Tan and Crystal Hana Kim", 
+        subtitle: "Portraits of Home: A Conversation with Lucy Tan and Crystal Hana Kim", 
         person: "Crystal Hana Kim",
         location: "Midtown Scholar Bookstore, Harrisburg, PA",
         schema_location: {
@@ -675,14 +681,14 @@
       {date: Date.new(2018, 9, 1), time: "1:45 - 2:30", title: "AJC Decatur Book Festival", location: "Decatur, GA"},
       {date: Date.new(2018, 8, 3), time: '4:00 PM', title: 'Author Visit', location: "Mountain Ridge Country Club, West Caldwell, NJ"},
       {date: Date.new(2018, 8, 2), time: '6:00 PM', title: 'Reading & Discussion', subtitle: 'with Lillian Li', location: "Pages Bookshop, Detroit, MI", person: "Lillian Li"},
-      {date: Date.new(2018, 8, 1), time: '7:00 PM', title: "Reading", subtitle: '| In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI", person: "Lillian Li", link: 'https://www.literatibookstore.com/event/fiction-literati-lucy-tan'},
+      {date: Date.new(2018, 8, 1), time: '7:00 PM', title: "Reading", subtitle: 'In conversation with Lillian Li', location: "Literati Bookstore, Ann Arbor, MI", person: "Lillian Li", link: 'https://www.literatibookstore.com/event/fiction-literati-lucy-tan'},
       {date: Date.new(2018, 7, 24), time: '7:00 - 8:30pm', title: "Reading and Signing", location: "Livingston Public Library, Livingston, NJ", link: 'https://www.eventbrite.com/e/meet-the-author-lucy-tan-what-we-were-promised-tickets-46684340118'},
-      {date: Date.new(2018, 7, 19), time: '7:30 PM', title: "Reading", subtitle: '| In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY", person: "Weike Wang", link: 'https://www.facebook.com/events/2080753235582528/'},
+      {date: Date.new(2018, 7, 19), time: '7:30 PM', title: "Reading", subtitle: 'In conversation with Weike Wang', location: "Books Are Magic, Brooklyn, NY", person: "Weike Wang", link: 'https://www.facebook.com/events/2080753235582528/'},
       {date: Date.new(2018, 7, 17), time: '7:00 - 9:00', title: 'Point Street Reading Series', location: 'Alchemy, Providence, RI', link: 'https://www.facebook.com/events/274337023142272/'},
-      {date: Date.new(2018, 7, 12), time: '7:00 PM', title: 'Reading', subtitle: '| In conversation with Rumaan Alam', location: 'Barnes & Noble Upper East Side (86th Street), Manhattan, NY', link: 'https://stores.barnesandnoble.com/event/9780061936021-0'},
+      {date: Date.new(2018, 7, 12), time: '7:00 PM', title: 'Reading', subtitle: 'In conversation with Rumaan Alam', location: 'Barnes & Noble Upper East Side (86th Street), Manhattan, NY', link: 'https://stores.barnesandnoble.com/event/9780061936021-0'},
       {date: Date.new(2018, 5, 19), time: '2:00 - 4:30', title: "Mochi Mag Presents: A Writers' Panel", location: "New York Public Library's 53rd St Branch, Manhattan, NY", link: "https://www.eventbrite.com/e/a-writers-panel-tickets-45326111620?aff=efbeventtix"},
-      {date: Date.new(2018, 3, 9), time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: "| Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
-      {date: Date.new(2018, 3, 9), time: '3:00 - 4:15', title: "AWP in Tampa, FL", subtitle: "| Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"}
+      {date: Date.new(2018, 3, 9), time: '4:30 - 5:45', title: 'AWP in Tampa, FL', subtitle: "Understanding Novel Structure", location: "Florida Salon 1, 2, & 3, Marriott Waterside, Second Floor"},
+      {date: Date.new(2018, 3, 9), time: '3:00 - 4:15', title: "AWP in Tampa, FL", subtitle: "Write What You Want to Know: Fiction Writers on Research", location: "Grand Salon B, Marriott Waterside, Second Floor"}
     ]
   end
 
