@@ -13,6 +13,8 @@
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2019 => [
+        {title: 'Night Sky with Exit Wounds', author: 'Ocean Vuong'},
+        {title: 'Selfish, Shallow, and Self-Absorbed: Sixteen Writers on the Decision to Not Have Kids', author: 'Meghan Daum'},
         {title: 'Eye Level', author: 'Jenny Xie'},
         {title: 'Less', author: 'Andrew Sean Greer'},
         {title: 'My Name is Lucy Barton', author: 'Elizabeth Strout'},
@@ -563,12 +565,6 @@
 
     @events = [
       {
-        date: Date.new(2019, 4, 18),
-        title: 'North Central College',
-        subtitle: '(more info to come!)',
-        location: 'Naperville, IL'
-      },
-      {
         date: Date.new(2019, 5, 23),
         title: 'Book Club Cafe',
         subtitle: '(more info to come!)',
@@ -594,6 +590,12 @@
           state: 'WI',
           zip: '53703'
         }
+      },
+      {
+        date: Date.new(2019, 4, 18),
+        title: 'North Central College',
+        subtitle: '(more info to come!)',
+        location: 'Naperville, IL'
       },
       {
         date: Date.new(2019, 3, 28),
