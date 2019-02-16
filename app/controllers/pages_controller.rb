@@ -13,6 +13,9 @@
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2019 => [
+        {title: 'Home Remedies', author: 'Xuan Juliana Wang (Hogarth, June 2019)'},
+        {title: 'The Mermaid and Mrs. Hancock', author: 'Imogen Hermes Gowar'},
+        {title: 'Behold the Dreamers', author: 'Imbolo Mbue'},
         {title: 'Night Sky with Exit Wounds', author: 'Ocean Vuong'},
         {title: 'Selfish, Shallow, and Self-Absorbed: Sixteen Writers on the Decision to Not Have Kids', author: 'Meghan Daum'},
         {title: 'Eye Level', author: 'Jenny Xie'},
