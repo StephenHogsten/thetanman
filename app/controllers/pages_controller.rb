@@ -13,6 +13,10 @@
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2019 => [
+        {title: 'Driving in Cars with Homeless Men', author: 'Kate Wisel (UPitt, October 2019)'},
+        {title: 'Edinburgh', author: 'Alexander Chee'},
+        {title: 'A Portrait of the Artist as a Young Man', author: 'James Joyce'},
+        {title: 'The Last Equation of Isaac Severy', author: 'Nova Jacobs'},
         {title: 'Home Remedies', author: 'Xuan Juliana Wang (Hogarth, June 2019)'},
         {title: 'The Mermaid and Mrs. Hancock', author: 'Imogen Hermes Gowar'},
         {title: 'Behold the Dreamers', author: 'Imbolo Mbue'},
