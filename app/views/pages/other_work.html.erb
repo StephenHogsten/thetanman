@@ -1,17 +1,4 @@
 <div class="row">
-  <h1 class="section-title">Essays and Articles</h1>
-  <hr>
-</div>
-
-<div class="row">
-  <div class="press-grid">
-    <% @articles.each do |item| %>
-      <%= render 'press_item', item: item %>
-    <% end %>
-  </div>
-</div>
-
-<div class="row">
   <h1 class='section-title'>Short Fiction</h1>
   <hr>
 </div>
@@ -81,4 +68,19 @@
     </div>
   </div>
 </div>
+
+
+<div class="row">
+  <h1 class="section-title">Essays and Articles</h1>
+  <hr>
+</div>
+
+<div class="row">
+  <div class="press-grid">
+    <% @articles.each do |item| %>
+      <%= render 'press_item', item: item %>
+    <% end %>
+  </div>
+</div>
+
 
