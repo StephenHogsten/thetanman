@@ -178,6 +178,20 @@
     @reviews = []
     @news = [
       {
+        date: Date.new(2018, 11, 13),
+        link: 'https://www.washingtonpost.com/entertainment/books/50-notable-works-of-fiction-in-2018/2018/11/13/224490a2-d3b2-11e8-83d6-291fcead2ab1_story.html?noredirect=on&utm_term=.3b9ab928a01d',
+        source: 'The Washington Post',
+        img_src: pub_image('The Washington Post'),
+        title: '50 Notable Works of Fiction in 2018'
+      },
+      {
+        date: Date.new(2019, 5, 10),
+        link: 'https://www.bustle.com/p/if-you-cant-get-enough-of-schitts-creek-you-need-to-read-these-13-books-17863027',
+        img_src: "https://cdn.bustle.com/bustle/production/public/logo-5f0141.svg",
+        source: 'Bustle',
+        title: "If You Can't Get Enough Of 'Schitt's Creek,' You Need To Read These 13 Books"
+      },
+      {
         date: Date.new(2018, 8, 23),
         link: 'https://www.milwaukeemag.com/books-to-cozy-up-with-this-fall-2018/',
         source: 'Milwaukee Magazine',
