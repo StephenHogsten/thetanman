@@ -568,6 +568,20 @@
 
     @events = [
       {
+        date: Date.new(2019, 6, 27),
+        title: "David R. Collins Writers' Conference",
+        subtitle: 'From Novel Idea to Immersive First Draft',
+        location: 'St. Ambrose University | McCarthy Hall',
+        schema_location: {
+          name: 'McCarthy Hall',
+          street_address: '518 W. Locust St',
+          city: 'Davenport',
+          state: 'IA',
+          zip: '52803'
+        },
+        link: 'https://www.mwcqc.org/events-opportunities/david-r-collins-writers-conference/'
+      },
+      {
         date: Date.new(2019, 5, 23),
         title: 'Book Club Cafe',
         subtitle: '(more info to come!)',
@@ -578,7 +592,8 @@
           city: 'Madison',
           state: 'WI',
           zip: '53703'
-        }
+        },
+        link: 'https://www.madisonpubliclibrary.org/engagement/book-club-cafe-2019'
       },
       {
         date: Date.new(2019, 4, 25),
@@ -599,6 +614,19 @@
         title: 'North Central College',
         subtitle: '(more info to come!)',
         location: 'Naperville, IL'
+      },
+      {
+        date: Date.new(2019, 4, 11),
+        time: '7:00 PM',
+        title: 'Lit Fest 2019 Keynote Speaker',
+        subtitle: 'presented by UW Publications',
+        location: 'University South, Varsity Hall, Madison, WI'
+      },
+      {
+        date: Date.new(2019, 4, 1),
+        time: '6:30 PM',
+        title: 'A Reading at the Ruby SF',
+        location: 'The Ruby San Fransisco'
       },
       {
         date: Date.new(2019, 3, 28),
