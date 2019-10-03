@@ -757,6 +757,11 @@ header {
   .__thumb {
     margin-right: 2em;
     border-radius: 4px;
+    max-width: 100px;
+
+    @media all and (max-width: $breakpoint-md) {
+      max-width: 30px
+    }
   }
 
   .__header {
