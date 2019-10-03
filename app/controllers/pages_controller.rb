@@ -621,7 +621,6 @@ class PagesController < ApplicationController
       {
         date: Date.new(2019, 5, 23),
         title: 'Book Club Cafe',
-        subtitle: '(more info to come!)',
         location: 'Madison Public Library, 201 W Mifflin St, Madison, WI',
         schema_location: {
           name: 'Madison Public Library',
@@ -649,7 +648,6 @@ class PagesController < ApplicationController
       {
         date: Date.new(2019, 4, 18),
         title: 'North Central College',
-        subtitle: '(more info to come!)',
         location: 'Naperville, IL'
       },
       {
