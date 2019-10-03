@@ -1,4 +1,4 @@
-  class PagesController < ApplicationController
+class PagesController < ApplicationController
   before_action :set_quotes, only: %i(home what_we_were_promised)
   before_action :set_reviews, only: %i(home what_we_were_promised)
 
@@ -13,6 +13,25 @@
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2019 => [
+        {title: 'The Story of a New Name', author: 'Elena Ferrante'},
+        {title: 'The Lover', author: 'Marguerite Duras'},
+        {title: 'The Makioka Sisters', author: 'Junichiro Tanizaki'},
+        {title: 'Trust Exercise', author: 'Susan Choi'},
+        {title: 'Le Dessin', author: 'Marc-Antoine Mathieu'},
+        {title: 'The Ensemble', author: 'Aja Gabel'},
+        {title: 'Cecil and Jordan in New York', author: 'Gabrielle Bell'},
+        {title: 'An American Marriage', author: 'Tayari Jones'},
+        {title: 'Boy, Snow, Bird', author: 'Helen Oyeyemi'},
+        {title: 'Daisy Jones and the Six', author: 'Taylor Jenkins Reid'},
+        {title: 'Meander, Spiral, Explode', author: 'Jane Allison'},
+        {title: 'The Regrets', author: 'Amy Bonnaffons'},
+        {title: 'Prism Stalker #1', author: 'Sloane Leong'},
+        {title: 'Parade', author: 'Hiromi Kawakami'},
+        {title: '5000 km Per Second', author: 'Manuele Fior'},
+        {title: 'Skylark', author: 'Dezso Kosztolányi'},
+        {title: 'The Trouble with Goats and Sheep', author: 'Joanna Cannon'},
+        {title: 'Normal People', author: 'Sally Rooney'},
+        {title: 'The Wonderful Wizard of Oz', author: 'L. Frank Baum'},
         {title: 'Driving in Cars with Homeless Men', author: 'Kate Wisel (UPitt, October 2019)'},
         {title: 'Edinburgh', author: 'Alexander Chee'},
         {title: 'A Portrait of the Artist as a Young Man', author: 'James Joyce'},
