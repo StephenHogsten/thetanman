@@ -13,6 +13,8 @@ class PagesController < ApplicationController
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2019 => [
+        {title: 'Heavy', author: 'Kiese Laymon'},
+        {title: 'My Year of Rest and Relaxation', author: 'Otessa Moshfegh'},
         {title: 'The Story of a New Name', author: 'Elena Ferrante'},
         {title: 'The Lover', author: 'Marguerite Duras'},
         {title: 'The Makioka Sisters', author: 'Junichiro Tanizaki'},
