@@ -605,6 +605,33 @@ class PagesController < ApplicationController
 
     @events = [
       {
+        date: Date.new(2019, 11, 21),
+        title: 'Promises, Promises',
+        subtitle: 'Reading and Conversation with Lucy Tan and Rebecca Clarren',
+        time: '7:00 PM',
+        location: 'Hugo House',
+        person: 'Rebecca Clarren',
+        schema_location: {
+          name: 'Hugo House',
+          street_address: '1634 11th Ave',
+          city: 'Seattle',
+          state: 'WA',
+          zip: '98122'
+        }
+      },
+      {
+        date: Date.new(2019, 8, 20),
+        title: 'Reading',
+        location: 'Elliot Bay Book Company',
+        schema_location: {
+          name: 'Elliot Bay Book Company',
+          street_address: '1521 10th Ave',
+          city: 'Seattle',
+          state: 'WA',
+          zip: '98122'
+        }
+      },
+      {
         date: Date.new(2019, 6, 27),
         title: "David R. Collins Writers' Conference",
         subtitle: 'From Novel Idea to Immersive First Draft',
