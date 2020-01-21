@@ -537,6 +537,24 @@ header {
   max-width: 100%;
   margin: 1em auto;
   display: block;
+
+  &__img {
+    max-height: 90%;
+    padding-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    @media all and (max-width: $breakpoint-xl) {
+      padding-top: 0;
+    }
+  }
+
+  &__caption {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.375rem;
+  }
 }
 
 .purchase-links {
