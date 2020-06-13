@@ -12,9 +12,27 @@ class PagesController < ApplicationController
     @title = "Lucy Tan - Currently Reading"
     @description = "See what Lucy Tan is currently reading"
     @books = {
+      2020 => [
+        {title: 'War and Peace', author: 'Leo Tolstoy'},
+        {title: 'Three Women', author: 'Lisa Taddeo'},
+        {title: 'Severance', author: 'Ling Ma'},
+        {title: 'Motherhood', author: 'Sheila Heti'},
+        {title: 'White Ivy', author: 'Susie Yang (Simon & Schuster, September 2020)'},
+        {title: 'Bunny', author: 'Mona Awad'},
+        {title: 'We Ride Upon Sticks', author: 'Quan Barry'},
+        {title: 'The Destiny Thief', author: 'Richard Russo'},
+        {title: 'Bitter Orange', author: 'Claire Fuller'},
+        {title: 'Days of Distraction', author: 'Alexandra Chang (Ecc, March 2020)'},
+        {title: 'Those Who Leave and Those Who Stay', author: 'Elena Ferrante'},
+        {title: 'Stories of Your Life and Others', author: 'Ted Chiang'},
+        {title: 'Girl in Snow', author: 'Danya Kukafka'},
+        {title: 'Hateship, Friendship, Courtship, Loveship', author: 'Alice Munro'}
+      ],
       2019 => [
+        {title: 'Kickdown', author: 'Rebecca Clarren'},
+        {title: 'The Golden Compass', author: 'Philip Pullman'},
         {title: 'Heavy', author: 'Kiese Laymon'},
-        {title: 'My Year of Rest and Relaxation', author: 'Otessa Moshfegh'},
+        {title: 'My Year of Rest and Relaxation', author: 'Ottessa Moshfegh'},
         {title: 'The Story of a New Name', author: 'Elena Ferrante'},
         {title: 'The Lover', author: 'Marguerite Duras'},
         {title: 'The Makioka Sisters', author: 'Junichiro Tanizaki'},
@@ -523,6 +541,13 @@ class PagesController < ApplicationController
     ]
 
     @interviews = [
+      { 
+        date: Date.new(2020, 6, 10),
+        link: 'https://uwm.edu/creamcityreview/interview-with-2020-fiction-prize-judge-lucy-tan/',
+        img_src: 'https://pbs.twimg.com/profile_images/1270791184764612610/IAPKLd0S_400x400.jpg',
+        source: 'Cream City Review',
+        title: 'Interview with 2020 Fiction Prize Judge Lucy Tan'
+      },
       { 
         date: Date.new(2018, 8, 29),
         link: "https://www.barnesandnoble.com/blog/imagine-your-way-into-another-life-lucy-tan-and-chloe-benjamin-in-conversation/",
