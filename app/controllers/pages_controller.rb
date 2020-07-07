@@ -13,6 +13,8 @@ class PagesController < ApplicationController
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2020 => [
+        {title: 'The Story of the Lost Child', author: 'Elena Ferrante'},
+        {title: 'Writers and Lovers', author: 'Lily King'},
         {title: 'War and Peace', author: 'Leo Tolstoy'},
         {title: 'Three Women', author: 'Lisa Taddeo'},
         {title: 'Severance', author: 'Ling Ma'},
@@ -22,7 +24,7 @@ class PagesController < ApplicationController
         {title: 'We Ride Upon Sticks', author: 'Quan Barry'},
         {title: 'The Destiny Thief', author: 'Richard Russo'},
         {title: 'Bitter Orange', author: 'Claire Fuller'},
-        {title: 'Days of Distraction', author: 'Alexandra Chang (Ecc, March 2020)'},
+        {title: 'Days of Distraction', author: 'Alexandra Chang (Ecco, March 2020)'},
         {title: 'Those Who Leave and Those Who Stay', author: 'Elena Ferrante'},
         {title: 'Stories of Your Life and Others', author: 'Ted Chiang'},
         {title: 'Girl in Snow', author: 'Danya Kukafka'},
