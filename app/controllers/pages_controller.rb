@@ -13,8 +13,11 @@ class PagesController < ApplicationController
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2020 => [
+        {title: 'My Brother\'s Husband: Volume I', author: 'Gengoroh Tagame'},
+        {title: 'Mistborn: The Final Empire', author: 'Brandon Sanderson'},
+        {title: 'All You Can Ever Know', author: 'Nicole Chung'},
+        {title: 'The Memory Police', author: 'Yoko Ogama'},
         {title: 'White Noise', author: 'Don DeLillo'},
-        {title: 'The Story of the Lost Child', author: 'Elena Ferrante'},
         {title: 'The Magician King', author: 'Lev Grossman'},
         {title: 'The Story of the Lost Child', author: 'Elena Ferrante'},
         {title: 'Writers and Lovers', author: 'Lily King'},
@@ -549,7 +552,7 @@ class PagesController < ApplicationController
       { 
         date: Date.new(2020, 6, 10),
         link: 'https://uwm.edu/creamcityreview/interview-with-2020-fiction-prize-judge-lucy-tan/',
-        img_src: 'https://pbs.twimg.com/profile_images/1270791184764612610/IAPKLd0S_400x400.jpg',
+        img_src: 'https://uwm.edu/creamcityreview/wp-content/uploads/sites/421/2020/05/web-banner-44.1-low-res-for-web.png',
         source: 'Cream City Review',
         title: 'Interview with 2020 Fiction Prize Judge Lucy Tan'
       },
@@ -636,6 +639,30 @@ class PagesController < ApplicationController
     @description = "Lucy is on the move! See the upcoming schedule to see if an event is coming to a city near you!"
 
     @events = [
+      { 
+        date: Date.new(2020, 10, 17),
+        title: 'Wisconsin Book Festival',
+        subtitle: 'In Conversation with Kelli Jo Ford',
+        time: '3:30 (Central)',
+        location: 'virtual link to come'
+      },
+      {
+        date: Date.new(2020, 6, 1),
+        title: 'Virtual Author Visit',
+        location: 'West Orange Public Library'
+      },
+      {
+        date: Date.new(2020, 1, 5),
+        title: 'In Conversation with Kate Wisel',
+        location: 'Elliott Bay Book Company',
+        schema_location: {
+          name: 'Elliot Bay Book Company',
+          street_address: '1521 10th Ave',
+          city: 'Seattle',
+          state: 'WA',
+          zip: '98122'
+        }
+      },
       {
         date: Date.new(2019, 11, 21),
         title: 'Promises, Promises',
@@ -890,7 +917,8 @@ class PagesController < ApplicationController
       { text: "Skillful... An immigrant story but one that also delves into the subject of going back to one's homeland. Tan humanizes each and every one of her characters.", author: "Weike Wang", author_description: "author of Chemistry"}, 
       { text: "A big, beautiful novel... Dazzling.", author: "Hannah Pittard", author_description: "author of Visible Empire and Listen To Me"}, 
       { text: "Lucy Tan explores the identities, memories, and emotional universes of her interlocking characters with effortless control and beauty. It is a quietly brilliant book, and a truly singular debut.", author: "Arna Bontemps Hemenway", author_description: "PEN award-winning author of Elegy on Kinderklavier"}, 
-      { text: "From its first page the novel promises a mix of emotion and intellect, plot and cultural critique, and it delivers... By the end of What We Were Promised you will agree that the real promise belongs to its debut author. Put Lucy Tan on your literary radar now.", author: "Matthew Salesses", author_description: "best-selling author of The Hundred Year Flood"}
+      { text: "From its first page the novel promises a mix of emotion and intellect, plot and cultural critique, and it delivers... By the end of What We Were Promised you will agree that the real promise belongs to its debut author. Put Lucy Tan on your literary radar now.", author: "Matthew Salesses", author_description: "best-selling author of The Hundred Year Flood"},
+      { text: "How do we cope with what we’ve lost, whether a cherished keepsake, our first love, the growing child who no longer needs us, or even our own country? In this moving family saga set against the backdrop of a changing China, Lucy Tan writes with poignancy, power, and remarkable wisdom about the losses that can limit us but that can also present opportunities for self-reflection and reinvention. This is a beautifully rendered debut with vivid characters who will stay with readers long after the last satisfying page.", author: 'Judith Claire Mitchell', author_description: 'author of A Reunion of Ghosts'}
     ]
   end
 
