@@ -643,8 +643,9 @@ class PagesController < ApplicationController
         date: Date.new(2020, 10, 17),
         title: 'Wisconsin Book Festival',
         subtitle: 'In Conversation with Kelli Jo Ford',
-        time: '3:30 (Central)',
-        location: 'virtual link to come'
+        time: '5:30 (Central)',
+        location: 'Virtual',
+        link: 'https://www.wisconsinbookfestival.org/events/crooked-hallelujah'
       },
       {
         date: Date.new(2020, 6, 1),
