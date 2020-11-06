@@ -647,9 +647,10 @@ class PagesController < ApplicationController
     @events = [
       {
         date: Date.new(2020, 11, 18),
-        title: 'Susie Yang: White Ivy, in conversation with Lucy Tan',
+        title: 'Susie Yang: White Ivy',
+        subtitle: 'In conversation with Lucy Tan',
         time: '7:00 PM (EST)',
-        location: 'Virtual',
+        location: 'Virtual via Books Are Magic',
         link: 'https://www.eventbrite.com/e/susie-yang-white-ivy-w-lucy-tan-registration-126573128635'
       },
       { 
