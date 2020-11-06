@@ -645,6 +645,13 @@ class PagesController < ApplicationController
     @description = "Lucy is on the move! See the upcoming schedule to see if an event is coming to a city near you!"
 
     @events = [
+      {
+        date: Date.new(2020, 11, 18),
+        title: 'Susie Yang: White Ivy, in conversation with Lucy Tan',
+        time: '7:00 PM (EST)',
+        location: 'Virtual',
+        link: 'https://www.eventbrite.com/e/susie-yang-white-ivy-w-lucy-tan-registration-126573128635'
+      },
       { 
         date: Date.new(2020, 10, 17),
         title: 'Wisconsin Book Festival',
