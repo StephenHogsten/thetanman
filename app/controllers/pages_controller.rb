@@ -13,6 +13,16 @@ class PagesController < ApplicationController
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2020 => [
+        {title: 'The Office of Historical Corrections', author: 'Danielle Evans'},
+        {title: 'The Hidden Life of Trees', author: 'Peter Wohlleben'},
+        {title: 'The Fire Next Time', author: 'James Baldwin'},
+        {title: 'If Beale Street Could Talk', author: 'James Baldwin'},
+        {title: 'Kink', author: 'edited by R.O. Kwon & Garth Greenwell'},
+        {title: 'Leave the World Behind', author: 'Rumaan Alam'},
+        {title: 'We Are All Completely Beside Ourselves', author: 'Karen Joy Fowler'},
+        {title: 'Unsettled Ground', author: 'Claire Fuller'},
+        {title: 'The Testaments', author: 'Margaret Atwood'},
+        {title: 'Crooked Hallelujah', author: 'Kelli Jo Ford'},
         {title: 'The Westing Game', author: 'Ellen Raskin'},
         {title: 'Disappearing Earth', author: 'Julia Phillips'},
         {title: 'The Hour of the Star', author: 'Clarice Lispector'},
