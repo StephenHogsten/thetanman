@@ -12,7 +12,30 @@ class PagesController < ApplicationController
     @title = "Lucy Tan - Currently Reading"
     @description = "See what Lucy Tan is currently reading"
     @books = {
+      2021 => [
+        {title: 'Conversations with Friends', author: 'Sally Rooney'},
+        {title: 'Women Talking', author: 'Miriam Toews'},
+        {title: 'The Ice Palace', author: 'Tarjei Vesaas'},
+        {title: 'The Tango Singer', author: 'Tomas Eloy Martinez '},
+        {title: 'Stealing Buddha\'s Dinner', author: 'Bich Minh Nguyen'},
+        {title: 'Cheat Day', author: 'Liv Stratman'},
+        {title: 'The Dutch House', author: 'Ann Patchett'},
+        {title: 'The Tenant', author: 'Katrine Engberg'},
+        {title: 'Worsted', author: 'Garielle Lutz'},
+        {title: 'Convenience Store Woman', author: 'Sayaka Murata'},
+        {title: 'The Three-Body Problem', author: 'Cixin Lu'},
+        {title: 'Tomboyland', author: 'Melissa Faliveno'},
+        {title: 'Interior Chinatown', author: 'Charles Yu'},
+        {title: 'The Great Believers', author: 'Rebecca Makkai'},
+        {title: 'Problems', author: 'Jade Sharma'},
+        {title: 'A Burning', author: 'Meghda Majumdar'},
+        {title: 'Luster', author: 'Raven Leilani'},
+        {title: 'Something Wild', author: 'Hanna Halperin'},
+        {title: 'Watching You', author: 'Lisa Jewell'},
+        {title: 'Hamnet', author: 'Maggie O\'Farrell'}
+      ],
       2020 => [
+        {title: 'Breasts and Eggs', author: 'Mieko Kawakami'},
         {title: 'The Office of Historical Corrections', author: 'Danielle Evans'},
         {title: 'The Hidden Life of Trees', author: 'Peter Wohlleben'},
         {title: 'The Fire Next Time', author: 'James Baldwin'},
@@ -53,6 +76,7 @@ class PagesController < ApplicationController
         {title: 'Hateship, Friendship, Courtship, Loveship', author: 'Alice Munro'}
       ],
       2019 => [
+        {title: 'Olive, Again', author: 'Elizabeth Strout'},
         {title: 'Kickdown', author: 'Rebecca Clarren'},
         {title: 'The Golden Compass', author: 'Philip Pullman'},
         {title: 'Heavy', author: 'Kiese Laymon'},
