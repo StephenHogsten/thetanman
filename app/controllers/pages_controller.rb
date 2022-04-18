@@ -12,7 +12,25 @@ class PagesController < ApplicationController
     @title = "Lucy Tan - Currently Reading"
     @description = "See what Lucy Tan is currently reading"
     @books = {
+      2022 => [
+        {title: "Death's End", author: "Cixin Liu"},
+        {title: "I Could Live Here Forever", author: "Hanna Halperin"},
+        {title: "Fiona and Jane", author: "Jean Chen Ho"},
+        {title: "Win Me Something", author: "Kyle Lucia Wu"},
+        {title: "The Door", author: "Magda Szabo"},
+        {title: "Kaleidoscope", author: "Cecily Wong"},
+        {title: "Rebecca", author: "Daphne du Maurier"},
+        {title: "D: A Tale of Two Worlds", author: "Michel Faber"},
+        {title: "The Net Beneath Us", author: "Carol Dunbar"},
+        {title: "Nine Perfect Strangers", author: "Liane Moriarty"},
+        {title: "The House on Needless Street", author: "Catriona Ward"},
+        {title: "The Pisces", author: "Melisssa Broder"},
+        {title: "The God of Small Things", author: "Arundhati Roy"},
+      ],
       2021 => [
+        {title: "Cain's Jawbone", author: 'Torquemada'},
+        {title: 'Piranesi', author: 'Susanna Clarke'},
+        {title: 'The Glass Hotel', author: 'Emily St. John Mandel'},
         {title: 'Klara and the Sun', author: 'Kazuo Ishiguro'},
         {title: 'Notes on an Execution', author: 'Danya Kukafka'},
         {title: 'A Lie Someone Told You About Yourself', author: 'Peter Ho Davies'},
