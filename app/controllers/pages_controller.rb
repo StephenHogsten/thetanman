@@ -13,6 +13,15 @@ class PagesController < ApplicationController
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2022 => [
+        {title: "The Sorrows of Others", author: "Ada Zhang"},
+        {title: "The Decagon House Murders", author: "Yukito Ayatsuji"},
+        {title: "Harlem Shuffle", author: "Colson Whitehead"},
+        {title: "Great Circle", author: "Maggie Shipstead"},
+        {title: "The Liars' Club", author: "Mary Karr"},
+        {title: "We Have Always Lived in the Castle", author: "Shirley Jackson"},
+        {title: "The Prime of Miss Jean Brodie", author: "Muriel Spark"},
+        {title: "A Childhood", author: "Harry Crews"},
+        {title: "Oh, William!", author: "Elizabeth Strout"},
         {title: "Death's End", author: "Cixin Liu"},
         {title: "I Could Live Here Forever", author: "Hanna Halperin"},
         {title: "Fiona and Jane", author: "Jean Chen Ho"},
@@ -25,7 +34,7 @@ class PagesController < ApplicationController
         {title: "Nine Perfect Strangers", author: "Liane Moriarty"},
         {title: "The House on Needless Street", author: "Catriona Ward"},
         {title: "The Pisces", author: "Melisssa Broder"},
-        {title: "The God of Small Things", author: "Arundhati Roy"},
+        {title: "The God of Small Things", author: "Arundhati Roy"}
       ],
       2021 => [
         {title: "Cain's Jawbone", author: 'Torquemada'},
