@@ -13,6 +13,18 @@ class PagesController < ApplicationController
     @description = "See what Lucy Tan is currently reading"
     @books = {
       2022 => [
+        {title: "The Sentence", author: "Louise Erdrich"},
+        {title: "Reprieve", author: "James Han Mattson"},
+        {title: "Intimacies", author: "Katie Kitamura"},
+        {title: "This is How You Lose the Time War", author: "Amal El-Mohtar and Max Gladstone"},
+        {title: "Revolutionary Road", author: "Richard Yates"},
+        {title: "Close Knit", author: "Laerke Bagger"},
+        {title: "The Puzzler", author: "A.J. Jacobs"},
+        {title: "The Man Who Could Move Clouds", author: "Ingrid Rojas Contreras"},
+        {title: "Death on the Nile", author: "Agatha Christie"},
+        {title: "Tomorrow and Tomorrow and Tomorrow", author: "Gabrielle Zevin"},
+        {title: "The Family Chao", author: "Lan Samantha Chang"},
+        {title: "Tracy Flick Can't Win", author: "Tom Perrotta"},
         {title: "The Sorrows of Others", author: "Ada Zhang"},
         {title: "The Decagon House Murders", author: "Yukito Ayatsuji"},
         {title: "Harlem Shuffle", author: "Colson Whitehead"},
@@ -32,7 +44,7 @@ class PagesController < ApplicationController
         {title: "D: A Tale of Two Worlds", author: "Michel Faber"},
         {title: "The Net Beneath Us", author: "Carol Dunbar"},
         {title: "Nine Perfect Strangers", author: "Liane Moriarty"},
-        {title: "The House on Needless Street", author: "Catriona Ward"},
+        {title: "The Last House on Needless Street", author: "Catriona Ward"},
         {title: "The Pisces", author: "Melisssa Broder"},
         {title: "The God of Small Things", author: "Arundhati Roy"}
       ],
