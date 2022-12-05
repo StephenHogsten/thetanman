@@ -587,6 +587,8 @@ header {
     border-radius: inherit;
     width: auto;
 
+    &.--bookshop,
+    &.--secret-garden,
     &.--ibooks,
     &.--indiebound {
       height: 55px;

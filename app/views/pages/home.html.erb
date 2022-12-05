@@ -45,11 +45,20 @@
 
 <div class="row --preorder">
   <hr class="__break">
-  <h3 class="section-subtitle">In stores now! Click below to order</h3>
+  <h3 class="section-subtitle">Click below to order</h3>
+  <p>Purchase through Secret Garden Books for a signed copy. Note in the comments that you would like it signed!</p>
   
   <div class="purchase-links">
-    <%= link_to "https://www.indiebound.org/book/9780316437189?aff=lucytan", class: 'purchase-button --wide' do %>
-      <img src="https://www.indiebound.org/files/indiebound/images/banners/indiesRed2_161x41_10-26-15.png" alt="IndieBound.org" class='--indiebound'>
+    <%= link_to 'https://www.secretgardenbooks.com/book/9780316437196', class: 'purchase-button --wide' do %>
+      <img src='https://www.secretgardenbooks.com/sites/secretgardenbooks.com/files/wabi_logo_0.jpg' class='--secret-garden' alt='secret garden books'>
+    <% end %>
+    <%= link_to 'https://bookshop.org/p/books/what-we-were-promised-lucy-tan/113200', class: 'purchase-button --wide' do %>
+      <img src='https://rails-assets-us.bookshop.org/ds/images/logo.041f4577edde0efff6b67907832d4c3dfd52407b.svg' alt='bookshop.org' class="--bookshop">
+    <% end %>
+    <% if false %>
+      <%= link_to "https://www.indiebound.org/book/9780316437189?aff=lucytan", class: 'purchase-button --wide' do %>
+        <img src="https://www.indiebound.org/files/indiebound/images/banners/indiesRed2_161x41_10-26-15.png" alt="IndieBound.org" class='--indiebound'>
+      <% end %>
     <% end %>
     <%= link_to "https://www.barnesandnoble.com/w/what-we-were-promised-lucy-tan/1127395858?ean=9780316437189", class: 'purchase-button --wide' do %>
       <%= image_tag 'barnesnoble.svg', alt: 'Barnes & Noble', class: '--bandn' %>
